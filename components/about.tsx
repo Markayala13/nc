@@ -1,18 +1,45 @@
 "use client"
 
-import { motion, useInView } from "framer-motion"
-import { useRef } from "react"
+import { motion, useInView, useMotionValue, useSpring } from "framer-motion"
+import { useRef, useEffect, useState } from "react"
 import { ArrowUpRight } from "lucide-react"
 
+function AnimatedNumber({ value, suffix, isInView }: { value: number; suffix: string; isInView: boolean }) {
+  const [displayValue, setDisplayValue] = useState(0)
+  const motionValue = useMotionValue(0)
+  const springValue = useSpring(motionValue, {
+    stiffness: 50,
+    damping: 30,
+    mass: 1
+  })
+
+  useEffect(() => {
+    if (isInView) {
+      motionValue.set(value)
+    }
+  }, [isInView, value, motionValue])
+
+  useEffect(() => {
+    const unsubscribe = springValue.on("change", (latest) => {
+      setDisplayValue(Math.floor(latest))
+    })
+    return () => unsubscribe()
+  }, [springValue])
+
+  return <span>{displayValue}{suffix}</span>
+}
+
 const stats = [
-  { value: "8+", label: "Years of Excellence" },
-  { value: "30+", label: "Years Team Experience" },
-  { value: "100%", label: "Client Satisfaction" },
+  { value: 8, suffix: "+", label: "Years of Excellence" },
+  { value: 30, suffix: "+", label: "Years Team Experience" },
+  { value: 100, suffix: "%", label: "Client Satisfaction" },
 ]
 
 export function About() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: "-100px" })
+  const statsRef = useRef(null)
+  const statsInView = useInView(statsRef, { once: true, margin: "-200px" })
 
   return (
     <section id="about" className="py-24 md:py-40 bg-[#f8f6f1] relative overflow-hidden" ref={ref}>
@@ -74,15 +101,17 @@ export function About() {
               </div>
 
               {/* Stats */}
-              <div className="grid grid-cols-3 gap-6 pt-8 border-t border-[#e8e4dc]">
+              <div ref={statsRef} className="grid grid-cols-3 gap-6 pt-8 border-t border-[#e8e4dc]">
                 {stats.map((stat, i) => (
                   <motion.div
                     key={stat.label}
                     initial={{ opacity: 0, y: 20 }}
-                    animate={isInView ? { opacity: 1, y: 0 } : {}}
-                    transition={{ duration: 0.8, delay: 0.6 + i * 0.1 }}
+                    animate={statsInView ? { opacity: 1, y: 0 } : {}}
+                    transition={{ duration: 0.8, delay: 0.2 + i * 0.15 }}
                   >
-                    <div className="font-serif text-3xl md:text-4xl text-[#a65d3f] mb-2">{stat.value}</div>
+                    <div className="font-serif text-3xl md:text-4xl text-[#a65d3f] mb-2">
+                      <AnimatedNumber value={stat.value} suffix={stat.suffix} isInView={statsInView} />
+                    </div>
                     <div className="text-[11px] tracking-[0.15em] uppercase text-[#6b6560]">{stat.label}</div>
                   </motion.div>
                 ))}

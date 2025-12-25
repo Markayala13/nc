@@ -2,6 +2,8 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Cormorant, Inter } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
+import { CustomCursor } from "@/components/custom-cursor"
+import { Preloader } from "@/components/preloader"
 import "./globals.css"
 
 const cormorant = Cormorant({
@@ -19,9 +21,9 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "LUXE | Bespoke Home Artisans",
+  title: "Adrian Bravo | Stucco & Construction Services",
   description:
-    "Where craftsmanship meets luxury. Bespoke home services for discerning homeowners who demand excellence.",
+    "Professional stucco, tile, concrete, landscaping, roofing, and fence services for San Diego County. Expert craftsmanship for your home.",
   generator: "v0.app",
   icons: {
     icon: [
@@ -49,7 +51,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${cormorant.variable} font-sans antialiased`}>
+      <body className={`${inter.variable} ${cormorant.variable} font-sans antialiased custom-cursor`}>
+        <Preloader />
+        <CustomCursor />
         {children}
         <Analytics />
       </body>

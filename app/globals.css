@@ -199,3 +199,11 @@ html {
   scroll-snap-align: start;
   flex-shrink: 0;
 }
+
+/* Custom cursor - hide default cursor on desktop only */
+@media (min-width: 1024px) {
+  .custom-cursor,
+  .custom-cursor * {
+    cursor: none !important;
+  }
+}
