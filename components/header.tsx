@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { ArrowUpRight } from "lucide-react"
+import Image from "next/image"
 
 export function Header() {
   const [scrolled, setScrolled] = useState(false)
@@ -29,20 +30,22 @@ export function Header() {
           scrolled ? "bg-[#f8f6f1]/90 backdrop-blur-md" : "bg-transparent"
         }`}
       >
-        <div className="flex items-center justify-between px-6 md:px-12 h-20 md:h-24">
+        <div className="flex items-center justify-between px-6 md:px-12 h-32 md:h-40">
           {/* Logo - Updated to Adrian Bravo brand */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.5 }}
-            className="flex items-center gap-2"
+            className="flex items-center -ml-16 md:ml-0"
           >
-            <span className="font-serif text-xl md:text-2xl font-light tracking-tight text-[#1a1a1a]">
-              ADRIAN BRAVO
-            </span>
-            <span className="text-[10px] text-[#6b6560] tracking-[0.2em] uppercase hidden sm:block">
-              Stucco & Construction
-            </span>
+            <Image
+              src="/logobg.png"
+              alt="Adrian Bravo - Stucco & Construction"
+              width={612}
+              height={408}
+              className="w-64 md:w-80 h-auto mt-10 md:mt-20"
+              priority
+            />
           </motion.div>
 
           {/* Desktop Nav */}

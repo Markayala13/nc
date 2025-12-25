@@ -1,5 +1,6 @@
 "use client"
 import { ArrowUpRight } from "lucide-react"
+import Image from "next/image"
 
 export function Footer() {
   const scrollToSection = (id: string) => {
@@ -40,8 +41,15 @@ export function Footer() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-12 py-16 md:py-24">
             {/* Brand */}
             <div className="lg:col-span-2">
-              <div className="font-serif text-2xl mb-2">Adrian Bravo</div>
-              <div className="text-[#6b6560] text-sm mb-6">Stucco & Construction Services</div>
+              <div className="mb-6">
+                <Image
+                  src="/logobg.png"
+                  alt="Adrian Bravo - Stucco & Construction"
+                  width={612}
+                  height={408}
+                  className="w-[450px] md:w-[600px] h-auto"
+                />
+              </div>
               <p className="text-[#6b6560] max-w-sm leading-relaxed mb-8">
                 Professional stucco, tile, concrete, and landscaping services for San Diego County homeowners who demand
                 quality craftsmanship.

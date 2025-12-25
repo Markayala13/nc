@@ -44,10 +44,7 @@ export function Hero() {
           transition={{ duration: 1, delay: 0.5 }}
           className="pt-28 md:pt-32 px-6 md:px-12 flex justify-between items-start"
         >
-          <div className="hidden md:block">
-            <span className="text-[11px] tracking-[0.3em] uppercase text-[#6b6560]">(8 Years of Excellence)</span>
-          </div>
-          <div className="hidden lg:flex items-center gap-12 text-[11px] tracking-[0.3em] uppercase text-[#6b6560]">
+          <div className="hidden lg:flex items-center gap-12 text-[11px] tracking-[0.3em] uppercase text-[#6b6560] ml-auto">
             <span>San Diego County</span>
             <span>Expert Stucco Services</span>
           </div>

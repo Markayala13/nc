@@ -7,38 +7,136 @@ import { ArrowLeft, ArrowRight, ArrowUpRight } from "lucide-react"
 const projects = [
   {
     id: 1,
-    title: "Coastal Home Stucco Renovation",
+    title: "Two-Story Home Stucco Installation",
     category: "Stucco",
     year: "2024",
-    image: "/luxury-coastal-home-stucco-exterior-renovation-san.jpg",
+    image: "/1.png",
   },
   {
     id: 2,
-    title: "Custom Smooth Finish Application",
+    title: "Modern House Exterior Stucco Work",
     category: "Stucco",
     year: "2024",
-    image: "/smooth-stucco-finish-modern-home-exterior.jpg",
+    image: "/2.png",
   },
   {
     id: 3,
-    title: "Luxury Bathroom Tile Installation",
-    category: "Tile",
+    title: "Residential Stucco Application",
+    category: "Stucco",
     year: "2024",
-    image: "/luxury-bathroom-porcelain-tile-installation.jpg",
+    image: "/3.png",
   },
   {
     id: 4,
-    title: "Decorative Concrete Driveway",
-    category: "Concrete",
-    year: "2023",
-    image: "/decorative-stamped-concrete-driveway-residential.jpg",
+    title: "New Construction Stucco Base Coat",
+    category: "Stucco",
+    year: "2024",
+    image: "/4.png",
   },
   {
     id: 5,
-    title: "Complete Exterior Stucco Repair",
+    title: "Open Frame House Stucco Prep",
     category: "Stucco",
-    year: "2023",
-    image: "/exterior-stucco-repair-professional-finish.jpg",
+    year: "2024",
+    image: "/5.png",
+  },
+  {
+    id: 6,
+    title: "Multi-Level Home Stucco Install",
+    category: "Stucco",
+    year: "2024",
+    image: "/6.png",
+  },
+  {
+    id: 7,
+    title: "Modern White Stucco Exterior",
+    category: "Stucco",
+    year: "2024",
+    image: "/7.png",
+  },
+  {
+    id: 8,
+    title: "Interior Fireplace Stucco Detail",
+    category: "Stucco",
+    year: "2024",
+    image: "/8.png",
+  },
+  {
+    id: 9,
+    title: "Custom Fireplace Stucco Feature",
+    category: "Stucco",
+    year: "2024",
+    image: "/9.png",
+  },
+  {
+    id: 10,
+    title: "Smooth Finish Stucco Garden Wall",
+    category: "Stucco",
+    year: "2024",
+    image: "/10.png",
+  },
+  {
+    id: 11,
+    title: "Modern Interior Stucco Fireplace",
+    category: "Stucco",
+    year: "2024",
+    image: "/11.png",
+  },
+  {
+    id: 12,
+    title: "Exterior Stucco Detail Work",
+    category: "Stucco",
+    year: "2024",
+    image: "/12.png",
+  },
+  {
+    id: 13,
+    title: "Residential Side Wall Stucco",
+    category: "Stucco",
+    year: "2024",
+    image: "/13.png",
+  },
+  {
+    id: 14,
+    title: "Exposed Stucco Interior Wall",
+    category: "Stucco",
+    year: "2024",
+    image: "/14.png",
+  },
+  {
+    id: 15,
+    title: "Textured Stucco Fireplace",
+    category: "Stucco",
+    year: "2024",
+    image: "/15.png",
+  },
+  {
+    id: 16,
+    title: "Single-Story Stucco Application",
+    category: "Stucco",
+    year: "2024",
+    image: "/16.png",
+  },
+  {
+    id: 17,
+    title: "Contemporary Home Stucco Build",
+    category: "Stucco",
+    year: "2024",
+    image: "/17.png",
+  },
+  {
+    id: 18,
+    title: "Spanish Tile Roof Stucco Exterior",
+    category: "Stucco",
+    year: "2024",
+    image: "/18.png",
+  },
+  {
+    id: 19,
+    title: "Clean White Stucco Home Finish",
+    category: "Stucco",
+    year: "2024",
+    image: "/19.png",
   },
 ]
 
@@ -50,7 +148,8 @@ export function Projects() {
 
   const scroll = (direction: "left" | "right") => {
     if (scrollRef.current) {
-      const scrollAmount = 400
+      const containerWidth = scrollRef.current.offsetWidth
+      const scrollAmount = containerWidth
       scrollRef.current.scrollBy({
         left: direction === "left" ? -scrollAmount : scrollAmount,
         behavior: "smooth",
@@ -82,31 +181,10 @@ export function Projects() {
               transition={{ duration: 1, delay: 0.2 }}
               className="font-serif text-4xl md:text-6xl lg:text-7xl text-[#1a1a1a] leading-[1.1]"
             >
-              Featured
+              Stucco
               <br />
               <span className="italic text-[#a65d3f]">projects</span>
             </motion.h2>
-
-            {/* Navigation arrows */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={isInView ? { opacity: 1 } : {}}
-              transition={{ duration: 1, delay: 0.4 }}
-              className="flex items-center gap-4"
-            >
-              <button
-                onClick={() => scroll("left")}
-                className="w-12 h-12 border border-[#1a1a1a] flex items-center justify-center hover:bg-[#1a1a1a] hover:text-[#f8f6f1] transition-all duration-300"
-              >
-                <ArrowLeft className="w-5 h-5" />
-              </button>
-              <button
-                onClick={() => scroll("right")}
-                className="w-12 h-12 border border-[#1a1a1a] flex items-center justify-center hover:bg-[#1a1a1a] hover:text-[#f8f6f1] transition-all duration-300"
-              >
-                <ArrowRight className="w-5 h-5" />
-              </button>
-            </motion.div>
           </div>
         </div>
       </div>
@@ -117,7 +195,7 @@ export function Projects() {
         animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 1, delay: 0.4 }}
         ref={scrollRef}
-        className="horizontal-scroll pl-6 md:pl-12 pr-6 pb-4 gap-6 md:gap-8"
+        className="horizontal-scroll pb-4 pl-6 md:pl-12"
       >
         {projects.map((project, i) => (
           <motion.div
@@ -125,7 +203,7 @@ export function Projects() {
             initial={{ opacity: 0, x: 40 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.5 + i * 0.1 }}
-            className="group relative w-[85vw] sm:w-[60vw] md:w-[45vw] lg:w-[35vw] flex-shrink-0"
+            className="group relative w-screen sm:w-[60vw] md:w-[45vw] lg:w-[calc((100vw-6rem-4rem)/3)] flex-shrink-0 px-6 sm:px-0 sm:mr-6 md:mr-8"
           >
             <div className="relative aspect-[3/4] overflow-hidden mb-6">
               <img
@@ -159,6 +237,31 @@ export function Projects() {
         {/* End spacer */}
         <div className="w-6 md:w-12 flex-shrink-0" />
       </motion.div>
+
+      {/* Navigation arrows - centered below carousel */}
+      <div className="px-6 md:px-12 mt-8">
+        <div className="max-w-[1400px] mx-auto">
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={isInView ? { opacity: 1 } : {}}
+            transition={{ duration: 1, delay: 0.4 }}
+            className="flex items-center justify-center gap-4"
+          >
+            <button
+              onClick={() => scroll("left")}
+              className="w-12 h-12 border border-[#1a1a1a] flex items-center justify-center hover:bg-[#1a1a1a] hover:text-[#f8f6f1] transition-all duration-300"
+            >
+              <ArrowLeft className="w-5 h-5" />
+            </button>
+            <button
+              onClick={() => scroll("right")}
+              className="w-12 h-12 border border-[#1a1a1a] flex items-center justify-center hover:bg-[#1a1a1a] hover:text-[#f8f6f1] transition-all duration-300"
+            >
+              <ArrowRight className="w-5 h-5" />
+            </button>
+          </motion.div>
+        </div>
+      </div>
     </section>
   )
 }
