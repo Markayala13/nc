@@ -1,7 +1,7 @@
 "use client"
 
 import { motion, useInView } from "framer-motion"
-import { useRef, useState } from "react"
+import { useRef, useState, useEffect } from "react"
 import { Star, ArrowLeft, ArrowRight, Quote } from "lucide-react"
 
 const testimonials = [
@@ -46,6 +46,15 @@ export function Reviews() {
   const prevTestimonial = () => {
     setActiveIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length)
   }
+
+  // Auto-rotate testimonials every 3 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextTestimonial()
+    }, 3000)
+
+    return () => clearInterval(interval)
+  }, [activeIndex])
 
   return (
     <section id="reviews" className="py-24 md:py-40 bg-[#a65d3f] relative overflow-hidden" ref={ref}>

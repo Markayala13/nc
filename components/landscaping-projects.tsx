@@ -47,6 +47,48 @@ const projects = [
     year: "2024",
     image: "/landscape6.png",
   },
+  {
+    id: 7,
+    title: "Professional Bush Pruning & Hedge Trimming",
+    category: "Landscaping",
+    year: "2024",
+    image: "/landscape7.jpg",
+  },
+  {
+    id: 8,
+    title: "Asian Garden Pathway Design",
+    category: "Landscaping",
+    year: "2024",
+    image: "/landscape8.jpg",
+  },
+  {
+    id: 9,
+    title: "Colorful Flower Garden Installation",
+    category: "Landscaping",
+    year: "2024",
+    image: "/landscape9.jpg",
+  },
+  {
+    id: 10,
+    title: "Contemporary Artificial Grass Front Yard",
+    category: "Landscaping",
+    year: "2024",
+    image: "/landscape10.jpg",
+  },
+  {
+    id: 11,
+    title: "Lush Green Lawn Care & Maintenance",
+    category: "Landscaping",
+    year: "2024",
+    image: "/landscape11.jpg",
+  },
+  {
+    id: 12,
+    title: "Garden Planting & Flower Installation",
+    category: "Landscaping",
+    year: "2024",
+    image: "/landscape12.jpg",
+  },
 ]
 
 export function LandscapingProjects() {

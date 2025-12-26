@@ -54,6 +54,48 @@ const projects = [
     year: "2024",
     image: "/roofing7.png",
   },
+  {
+    id: 8,
+    title: "Aerial View of Red Tile Rooftops",
+    category: "Roofing",
+    year: "2024",
+    image: "/roofing8.jpg",
+  },
+  {
+    id: 9,
+    title: "Brown Shingled Roof Detail",
+    category: "Roofing",
+    year: "2024",
+    image: "/roofing9.jpg",
+  },
+  {
+    id: 10,
+    title: "Modern Gray Shingle Roof Exterior",
+    category: "Roofing",
+    year: "2024",
+    image: "/roofing10.jpg",
+  },
+  {
+    id: 11,
+    title: "Contemporary Black Roof Installation",
+    category: "Roofing",
+    year: "2024",
+    image: "/roofing11.jpg",
+  },
+  {
+    id: 12,
+    title: "Modern Metal Roof Detail",
+    category: "Roofing",
+    year: "2024",
+    image: "/roofing12.jpg",
+  },
+  {
+    id: 13,
+    title: "Tile Roof Texture and Pattern",
+    category: "Roofing",
+    year: "2024",
+    image: "/roofing13.jpg",
+  },
 ]
 
 export function RoofingProjects() {

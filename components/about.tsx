@@ -124,10 +124,10 @@ export function About() {
             initial={{ opacity: 0, y: 80 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 1.2, delay: 0.6 }}
-            className="mt-24 md:mt-32 relative aspect-[21/9] overflow-hidden"
+            className="mt-24 md:mt-32 relative h-[30vh] md:h-[40vh] overflow-hidden rounded-sm"
           >
             <img
-              src="/professional-stucco-craftsman-applying-finish-to-l.jpg"
+              src="/stu.png"
               alt="Master stucco craftsman at work"
               className="w-full h-full object-cover"
             />
