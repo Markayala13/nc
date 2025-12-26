@@ -167,6 +167,7 @@ export function RoofingProjects() {
               <img
                 src={project.image || "/placeholder.svg"}
                 alt={project.title}
+                loading="lazy"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-[#1a1a1a]/0 group-hover:bg-[#1a1a1a]/20 transition-colors duration-500" />

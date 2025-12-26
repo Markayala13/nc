@@ -15,6 +15,7 @@ export function VideoSection() {
         <img
           src="/stu.png"
           alt=""
+          loading="lazy"
           className="w-full h-full object-cover"
         />
       </div>
@@ -60,6 +61,8 @@ export function VideoSection() {
             <video
               controls
               className="w-full h-full object-cover"
+              preload="none"
+              loading="lazy"
             >
               <source src="/promo-video.mp4" type="video/mp4" />
               Your browser does not support the video tag.

@@ -129,6 +129,7 @@ export function About() {
             <img
               src="/stu.png"
               alt="Master stucco craftsman at work"
+              loading="lazy"
               className="w-full h-full object-cover"
             />
             <div className="absolute bottom-0 left-0 right-0 p-8 md:p-12 bg-gradient-to-t from-[#1a1a1a] to-transparent">
