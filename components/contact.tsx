@@ -208,7 +208,7 @@ export function Contact() {
                         <div className="text-[11px] tracking-[0.15em] uppercase text-[#6b6560] mb-1">
                           Customer Service
                         </div>
-                        <div className="text-[#f8f6f1] text-lg group-hover:text-[#a65d3f] transition-colors duration-300">
+                        <div className="text-[#f8f6f1] text-lg group-hover:text-[#a65d3f] transition-colors duration-300 break-all">
                           aracelyfernandez399@gmail.com
                         </div>
                       </div>

@@ -1,14 +1,10 @@
 "use client"
 
-import { Mail, FileText, MapPin } from "lucide-react"
+import { Mail, Phone, MapPin } from "lucide-react"
 import { useMobile } from "@/hooks/use-mobile"
 
 export function MobileCTABar() {
   const isMobile = useMobile()
-
-  const scrollToContact = () => {
-    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })
-  }
 
   const scrollToServices = () => {
     document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })
@@ -33,13 +29,13 @@ export function MobileCTABar() {
           <MapPin className="w-5 h-5 text-[#a65d3f] mb-1" />
           <span className="text-[10px] tracking-[0.1em] uppercase text-[#f8f6f1]">Services</span>
         </button>
-        <button
-          onClick={scrollToContact}
+        <a
+          href="tel:7605566481"
           className="flex flex-col items-center justify-center py-3 bg-[#a65d3f] hover:bg-[#8b4a32] transition-colors active:bg-[#8b4a32]"
         >
-          <FileText className="w-5 h-5 text-[#f8f6f1] mb-1" />
-          <span className="text-[10px] tracking-[0.1em] uppercase text-[#f8f6f1]">Free Quote</span>
-        </button>
+          <Phone className="w-5 h-5 text-[#f8f6f1] mb-1" />
+          <span className="text-[10px] tracking-[0.1em] uppercase text-[#f8f6f1]">Call</span>
+        </a>
       </div>
     </div>
   )

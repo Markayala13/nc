@@ -60,8 +60,9 @@ export function VideoSection() {
           >
             <video
               controls
+              poster="/stu.png"
               className="w-full h-full object-cover"
-              preload="none"
+              preload="metadata"
               loading="lazy"
             >
               <source src="/promo-video.mp4" type="video/mp4" />
