@@ -149,11 +149,8 @@ export function LandscapingProjects() {
         className="horizontal-scroll pb-4 pl-6 md:pl-12"
       >
         {projects.map((project, i) => (
-          <motion.div
+          <div
             key={project.id}
-            initial={{ opacity: 0, x: 40 }}
-            animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.8, delay: 0.5 + i * 0.1 }}
             className="group relative w-screen sm:w-[60vw] md:w-[45vw] lg:w-[calc((100vw-6rem-4rem)/3)] flex-shrink-0 px-6 sm:px-0 sm:mr-6 md:mr-8"
           >
             <div className="relative aspect-[3/4] overflow-hidden mb-6">
@@ -183,7 +180,7 @@ export function LandscapingProjects() {
               </div>
               <span className="text-[11px] tracking-[0.15em] uppercase text-[#6b6560]">{project.year}</span>
             </div>
-          </motion.div>
+          </div>
         ))}
 
         {/* End spacer */}
