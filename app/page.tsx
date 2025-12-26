@@ -8,6 +8,7 @@ import { ConcreteProjects } from "@/components/concrete-projects"
 import { LandscapingProjects } from "@/components/landscaping-projects"
 import { RoofingProjects } from "@/components/roofing-projects"
 import { FencesProjects } from "@/components/fences-projects"
+import { VideoSection } from "@/components/video-section"
 import { Reviews } from "@/components/reviews"
 import { Contact } from "@/components/contact"
 import { Footer } from "@/components/footer"
@@ -26,6 +27,7 @@ export default function HomePage() {
       <LandscapingProjects />
       <RoofingProjects />
       <FencesProjects />
+      <VideoSection />
       <Reviews />
       <Contact />
       <Footer />
