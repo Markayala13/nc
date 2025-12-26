@@ -1,12 +1,21 @@
 "use client"
 
 import { motion, useInView } from "framer-motion"
-import { useRef } from "react"
+import { useRef, useState } from "react"
 import { Play } from "lucide-react"
 
 export function VideoSection() {
   const ref = useRef(null)
+  const videoRef = useRef<HTMLVideoElement>(null)
   const isInView = useInView(ref, { once: true, margin: "-100px" })
+  const [isPlaying, setIsPlaying] = useState(false)
+
+  const handlePlayClick = () => {
+    if (videoRef.current) {
+      videoRef.current.play()
+      setIsPlaying(true)
+    }
+  }
 
   return (
     <section id="video" className="py-24 md:py-40 bg-[#1a1a1a] relative overflow-hidden" ref={ref}>
@@ -59,15 +68,30 @@ export function VideoSection() {
             className="relative aspect-[9/16] w-full max-w-[380px] md:max-w-[450px] max-h-[680px] md:max-h-[800px] mx-auto overflow-hidden rounded-sm"
           >
             <video
+              ref={videoRef}
               controls
               poster="/stu.png"
               className="w-full h-full object-cover"
               preload="metadata"
               loading="lazy"
+              onPlay={() => setIsPlaying(true)}
+              onPause={() => setIsPlaying(false)}
             >
               <source src="/promo-video.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
+
+            {/* Play button overlay */}
+            {!isPlaying && (
+              <button
+                onClick={handlePlayClick}
+                className="absolute inset-0 flex items-center justify-center bg-black/30 hover:bg-black/40 transition-colors duration-300 group"
+              >
+                <div className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-[#a65d3f] flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                  <Play className="w-10 h-10 md:w-12 md:h-12 text-[#f8f6f1] fill-[#f8f6f1] ml-1" />
+                </div>
+              </button>
+            )}
           </motion.div>
         </div>
       </div>
