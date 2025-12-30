@@ -7,94 +7,94 @@ import { ArrowLeft, ArrowRight, ArrowUpRight } from "lucide-react"
 const projects = [
   {
     id: 1,
-    title: "Clay Tile Roof Installation",
-    category: "Roofing",
-    year: "2024",
-    image: "/roofing1.png",
-  },
-  {
-    id: 2,
-    title: "Cedar Shake Roof Replacement",
-    category: "Roofing",
-    year: "2024",
-    image: "/roofing2.png",
-  },
-  {
-    id: 3,
-    title: "Slate Shingle Roof Detail",
-    category: "Roofing",
-    year: "2024",
-    image: "/roofing3.png",
-  },
-  {
-    id: 4,
-    title: "Residential Roof Replacement Aerial View",
-    category: "Roofing",
-    year: "2024",
-    image: "/roofing4.png",
-  },
-  {
-    id: 5,
-    title: "Professional Roof Tile Installation",
-    category: "Roofing",
-    year: "2024",
-    image: "/roofing5.png",
-  },
-  {
-    id: 6,
-    title: "Metal Roofing Panel Installation",
-    category: "Roofing",
-    year: "2024",
-    image: "/roofing6.png",
-  },
-  {
-    id: 7,
-    title: "Modern Home Roofing Project",
-    category: "Roofing",
-    year: "2024",
-    image: "/roofing7.png",
-  },
-  {
-    id: 8,
     title: "Aerial View of Red Tile Rooftops",
     category: "Roofing",
     year: "2024",
-    image: "/roofing8.jpg",
+    image: "/assets/roofing/aerial-shot-rooftops-city-buildings-with-red-shingles.jpg",
   },
   {
-    id: 9,
+    id: 2,
     title: "Brown Shingled Roof Detail",
     category: "Roofing",
     year: "2024",
-    image: "/roofing9.jpg",
+    image: "/assets/roofing/brown-shingled-roof-with-brown-shingle-roof.jpg",
+  },
+  {
+    id: 3,
+    title: "Modern Home Exterior",
+    category: "Roofing",
+    year: "2024",
+    image: "/assets/roofing/exterior-home.jpg",
+  },
+  {
+    id: 4,
+    title: "Professional Roof Tile Installation",
+    category: "Roofing",
+    year: "2024",
+    image: "/assets/roofing/freepik__8k-photorealistic-cinematic-photography-intimate-c__6846.png",
+  },
+  {
+    id: 5,
+    title: "Residential Roof Detail",
+    category: "Roofing",
+    year: "2024",
+    image: "/assets/roofing/freepik__candid-i-with-natural-textures-and-highly-realisti__6843.png",
+  },
+  {
+    id: 6,
+    title: "Closeup Roof Tile Photography",
+    category: "Roofing",
+    year: "2024",
+    image: "/assets/roofing/freepik__cinematic-closeup-photography-8k-detailed-shot-of-__6847.png",
+  },
+  {
+    id: 7,
+    title: "Aerial Roof Installation View",
+    category: "Roofing",
+    year: "2024",
+    image: "/assets/roofing/freepik__cinematic-drone-photography-8k-photorealistic-aeri__6842.png",
+  },
+  {
+    id: 8,
+    title: "Macro Roof Detail Shot",
+    category: "Roofing",
+    year: "2024",
+    image: "/assets/roofing/freepik__cinematic-macro-photography-8k-closeup-detail-shot__6845.png",
+  },
+  {
+    id: 9,
+    title: "Detailed Roof Closeup",
+    category: "Roofing",
+    year: "2024",
+    image: "/assets/roofing/freepik__cinematic-macro-photography-8k-detailed-closeup-sh__6848.png",
   },
   {
     id: 10,
-    title: "Modern Gray Shingle Roof Exterior",
+    title: "Eye-Level Roof Photography",
     category: "Roofing",
     year: "2024",
-    image: "/roofing10.jpg",
+    image: "/assets/roofing/freepik__photorealistic-8k-cinematic-photography-eyelevel-f__6844.png",
   },
   {
     id: 11,
     title: "Contemporary Black Roof Installation",
     category: "Roofing",
     year: "2024",
-    image: "/roofing11.jpg",
+    image: "/assets/roofing/house-with-black-roof-brown-door-with-window-that-says-welcome-right.jpg",
   },
   {
     id: 12,
-    title: "Modern Metal Roof Detail",
+    title: "Low Angle Modern House Roof",
     category: "Roofing",
     year: "2024",
-    image: "/roofing12.jpg",
+    image: "/assets/roofing/low-angle-modern-house-roof.jpg",
   },
   {
     id: 13,
     title: "Tile Roof Texture and Pattern",
     category: "Roofing",
     year: "2024",
-    image: "/roofing13.jpg",
+    image: "/assets/roofing/tile-roof-house-home-textures.jpg",
   },
 ]
 
@@ -160,7 +160,7 @@ export function RoofingProjects() {
             key={project.id}
             className="group relative w-screen sm:w-[60vw] md:w-[45vw] lg:w-[calc((100vw-6rem-4rem)/3)] flex-shrink-0 px-6 sm:px-0 sm:mr-6 md:mr-8"
           >
-            <div className="relative aspect-[3/4] overflow-hidden mb-6">
+            <div className="relative aspect-[3/4] overflow-hidden">
               <img
                 src={project.image || "/placeholder.svg"}
                 alt={project.title}
@@ -176,16 +176,6 @@ export function RoofingProjects() {
                   <ArrowUpRight className="w-4 h-4" />
                 </button>
               </div>
-            </div>
-
-            <div className="flex items-start justify-between">
-              <div>
-                <h3 className="font-serif text-xl md:text-2xl text-[#1a1a1a] mb-1 group-hover:text-[#a65d3f] transition-colors duration-300">
-                  {project.title}
-                </h3>
-                <span className="text-[11px] tracking-[0.15em] uppercase text-[#6b6560]">{project.category}</span>
-              </div>
-              <span className="text-[11px] tracking-[0.15em] uppercase text-[#6b6560]">{project.year}</span>
             </div>
           </div>
         ))}

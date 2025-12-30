@@ -10,133 +10,133 @@ const projects = [
     title: "Two-Story Home Stucco Installation",
     category: "Stucco",
     year: "2024",
-    image: "/1.png",
+    image: "/assets/estuco/1.png",
   },
   {
     id: 2,
     title: "Modern House Exterior Stucco Work",
     category: "Stucco",
     year: "2024",
-    image: "/2.png",
+    image: "/assets/estuco/2.png",
   },
   {
     id: 3,
     title: "Residential Stucco Application",
     category: "Stucco",
     year: "2024",
-    image: "/3.png",
+    image: "/assets/estuco/3.png",
   },
   {
     id: 4,
     title: "New Construction Stucco Base Coat",
     category: "Stucco",
     year: "2024",
-    image: "/4.png",
+    image: "/assets/estuco/4.png",
   },
   {
     id: 5,
     title: "Open Frame House Stucco Prep",
     category: "Stucco",
     year: "2024",
-    image: "/5.png",
+    image: "/assets/estuco/5.png",
   },
   {
     id: 6,
     title: "Multi-Level Home Stucco Install",
     category: "Stucco",
     year: "2024",
-    image: "/6.png",
+    image: "/assets/estuco/6.png",
   },
   {
     id: 7,
     title: "Modern White Stucco Exterior",
     category: "Stucco",
     year: "2024",
-    image: "/7.png",
+    image: "/assets/estuco/7.png",
   },
   {
     id: 8,
     title: "Interior Fireplace Stucco Detail",
     category: "Stucco",
     year: "2024",
-    image: "/8.png",
+    image: "/assets/estuco/8.png",
   },
   {
     id: 9,
     title: "Custom Fireplace Stucco Feature",
     category: "Stucco",
     year: "2024",
-    image: "/9.png",
+    image: "/assets/estuco/9.png",
   },
   {
     id: 10,
     title: "Smooth Finish Stucco Garden Wall",
     category: "Stucco",
     year: "2024",
-    image: "/10.png",
+    image: "/assets/estuco/10.png",
   },
   {
     id: 11,
     title: "Modern Interior Stucco Fireplace",
     category: "Stucco",
     year: "2024",
-    image: "/11.png",
+    image: "/assets/estuco/11.png",
   },
   {
     id: 12,
     title: "Exterior Stucco Detail Work",
     category: "Stucco",
     year: "2024",
-    image: "/12.png",
+    image: "/assets/estuco/12.png",
   },
   {
     id: 13,
     title: "Residential Side Wall Stucco",
     category: "Stucco",
     year: "2024",
-    image: "/13.png",
+    image: "/assets/estuco/13.png",
   },
   {
     id: 14,
     title: "Exposed Stucco Interior Wall",
     category: "Stucco",
     year: "2024",
-    image: "/14.png",
+    image: "/assets/estuco/14.png",
   },
   {
     id: 15,
     title: "Textured Stucco Fireplace",
     category: "Stucco",
     year: "2024",
-    image: "/15.png",
+    image: "/assets/estuco/15.png",
   },
   {
     id: 16,
     title: "Single-Story Stucco Application",
     category: "Stucco",
     year: "2024",
-    image: "/16.png",
+    image: "/assets/estuco/16.png",
   },
   {
     id: 17,
     title: "Contemporary Home Stucco Build",
     category: "Stucco",
     year: "2024",
-    image: "/17.png",
+    image: "/assets/estuco/17.png",
   },
   {
     id: 18,
     title: "Spanish Tile Roof Stucco Exterior",
     category: "Stucco",
     year: "2024",
-    image: "/18.png",
+    image: "/assets/estuco/18.png",
   },
   {
     id: 19,
     title: "Clean White Stucco Home Finish",
     category: "Stucco",
     year: "2024",
-    image: "/19.png",
+    image: "/assets/estuco/19.png",
   },
 ]
 
@@ -202,7 +202,7 @@ export function Projects() {
             key={project.id}
             className="group relative w-screen sm:w-[60vw] md:w-[45vw] lg:w-[calc((100vw-6rem-4rem)/3)] flex-shrink-0 px-6 sm:px-0 sm:mr-6 md:mr-8"
           >
-            <div className="relative aspect-[3/4] overflow-hidden mb-6">
+            <div className="relative aspect-[3/4] overflow-hidden">
               <img
                 src={project.image || "/placeholder.svg"}
                 alt={project.title}
@@ -218,16 +218,6 @@ export function Projects() {
                   <ArrowUpRight className="w-4 h-4" />
                 </button>
               </div>
-            </div>
-
-            <div className="flex items-start justify-between">
-              <div>
-                <h3 className="font-serif text-xl md:text-2xl text-[#1a1a1a] mb-1 group-hover:text-[#a65d3f] transition-colors duration-300">
-                  {project.title}
-                </h3>
-                <span className="text-[11px] tracking-[0.15em] uppercase text-[#6b6560]">{project.category}</span>
-              </div>
-              <span className="text-[11px] tracking-[0.15em] uppercase text-[#6b6560]">{project.year}</span>
             </div>
           </div>
         ))}

@@ -7,115 +7,80 @@ import { ArrowLeft, ArrowRight, ArrowUpRight } from "lucide-react"
 const projects = [
   {
     id: 1,
-    title: "Modern Horizontal Wood Fence with Concrete Base",
+    title: "Modern Horizontal Wood Fence",
     category: "Fences",
     year: "2024",
-    image: "/fence1.png",
+    image: "/assets/fences/ChatGPT Image 25 dic 2025, 12_29_03 p.m..png",
   },
   {
     id: 2,
-    title: "Retaining Wall with Wood Fence",
+    title: "Contemporary Wood Fence Design",
     category: "Fences",
     year: "2024",
-    image: "/fence2.png",
+    image: "/assets/fences/ChatGPT Image 25 dic 2025, 12_30_47 p.m..png",
   },
   {
     id: 3,
     title: "White Vinyl Privacy Fence",
     category: "Fences",
     year: "2024",
-    image: "/fence3.png",
+    image: "/assets/fences/ChatGPT Image 25 dic 2025, 12_30_54 p.m..png",
   },
   {
     id: 4,
-    title: "Contemporary Horizontal Slat Fence with White Base",
-    category: "Fences",
-    year: "2024",
-    image: "/fence4.png",
-  },
-  {
-    id: 5,
-    title: "Cedar Horizontal Slat Fence Detail",
-    category: "Fences",
-    year: "2024",
-    image: "/fence5.png",
-  },
-  {
-    id: 6,
-    title: "Residential Front Yard Wood Fence with Landscape",
-    category: "Fences",
-    year: "2024",
-    image: "/fence6.png",
-  },
-  {
-    id: 7,
-    title: "Modern Wood Fence with Decorative Landscaping",
-    category: "Fences",
-    year: "2024",
-    image: "/fence7.png",
-  },
-  {
-    id: 8,
     title: "Classic White Picket Fence",
     category: "Fences",
     year: "2024",
-    image: "/fence8.jpg",
+    image: "/assets/fences/greetsiel-germany.jpg",
   },
   {
-    id: 9,
+    id: 5,
     title: "High White Privacy Fence in Autumn",
     category: "Fences",
     year: "2024",
-    image: "/fence9.jpg",
+    image: "/assets/fences/high-white-fence-front-house-autumn-with-shadows-from-branches.jpg",
   },
   {
-    id: 10,
-    title: "Decorative Wood Picket Fence with Pathway",
+    id: 6,
+    title: "Residential Front Yard Fence",
     category: "Fences",
     year: "2024",
-    image: "/fence10.jpg",
+    image: "/assets/fences/house-is-fence-house-with-tree-background.jpg",
   },
   {
-    id: 11,
-    title: "Brown Wooden Privacy Fence",
-    category: "Fences",
-    year: "2024",
-    image: "/fence11.jpg",
-  },
-  {
-    id: 12,
+    id: 7,
     title: "Cedar Wood Fence with Rainbow Background",
     category: "Fences",
     year: "2024",
-    image: "/fence12.jpg",
+    image: "/assets/fences/scenic-view-rainbow-against-sky-sunset.jpg",
   },
   {
-    id: 13,
-    title: "Natural Wood Picket Fence with Garden",
+    id: 8,
+    title: "Wood Fence with Lawn Garden",
     category: "Fences",
     year: "2024",
-    image: "/fence13.jpg",
+    image: "/assets/fences/wooden-fence-lawn-garden-close-up.jpg",
   },
   {
-    id: 14,
+    id: 9,
     title: "Weathered Wood Privacy Fence",
     category: "Fences",
     year: "2024",
-    image: "/fence14.jpg",
+    image: "/assets/fences/wooden-fence-standing-tall-it-s-weathered-texture-sturdy-construction-symbolize-both-security.jpg",
   },
   {
-    id: 15,
-    title: "Natural Cedar Picket Fence in Sunlight",
+    id: 10,
+    title: "Natural Cedar Fence in Sunlight",
     category: "Fences",
     year: "2024",
-    image: "/fence15.jpg",
+    image: "/assets/fences/wooden-fence-stands-tall-weathered-by-time-symbol-protection-boundaries-warm-sunlight-en.jpg",
   },
   {
-    id: 16,
+    id: 11,
     title: "Cedar Wood Fence with Green Lawn",
     category: "Fences",
     year: "2024",
-    image: "/fence16.jpg",
+    image: "/assets/fences/wooden-fence-with-green-lawn-background.jpg",
   },
 ]
 
@@ -181,7 +146,7 @@ export function FencesProjects() {
             key={project.id}
             className="group relative w-screen sm:w-[60vw] md:w-[45vw] lg:w-[calc((100vw-6rem-4rem)/3)] flex-shrink-0 px-6 sm:px-0 sm:mr-6 md:mr-8"
           >
-            <div className="relative aspect-[3/4] overflow-hidden mb-6">
+            <div className="relative aspect-[3/4] overflow-hidden">
               <img
                 src={project.image || "/placeholder.svg"}
                 alt={project.title}
@@ -197,16 +162,6 @@ export function FencesProjects() {
                   <ArrowUpRight className="w-4 h-4" />
                 </button>
               </div>
-            </div>
-
-            <div className="flex items-start justify-between">
-              <div>
-                <h3 className="font-serif text-xl md:text-2xl text-[#1a1a1a] mb-1 group-hover:text-[#a65d3f] transition-colors duration-300">
-                  {project.title}
-                </h3>
-                <span className="text-[11px] tracking-[0.15em] uppercase text-[#6b6560]">{project.category}</span>
-              </div>
-              <span className="text-[11px] tracking-[0.15em] uppercase text-[#6b6560]">{project.year}</span>
             </div>
           </div>
         ))}

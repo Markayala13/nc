@@ -10,70 +10,70 @@ const projects = [
     title: "Decorative Bathroom Floor Tile",
     category: "Tile",
     year: "2024",
-    image: "/tile1.jpeg",
+    image: "/assets/tile/WhatsApp Image 2025-12-21 at 1.12.59 PM (1).jpeg",
   },
   {
     id: 2,
     title: "Stone Fireplace Tile Installation",
     category: "Tile",
     year: "2024",
-    image: "/tile2.jpeg",
+    image: "/assets/tile/WhatsApp Image 2025-12-21 at 1.12.59 PM (2).jpeg",
   },
   {
     id: 3,
     title: "Marble Hallway Floor Tile",
     category: "Tile",
     year: "2024",
-    image: "/tile3.jpeg",
+    image: "/assets/tile/WhatsApp Image 2025-12-21 at 1.12.59 PM.jpeg",
   },
   {
     id: 4,
     title: "Shower Tile with Hexagon Detail",
     category: "Tile",
     year: "2024",
-    image: "/tile4.jpeg",
+    image: "/assets/tile/WhatsApp Image 2025-12-21 at 1.13.00 PM (1).jpeg",
   },
   {
     id: 5,
     title: "Wood-Look Shower Tile",
     category: "Tile",
     year: "2024",
-    image: "/tile5.jpeg",
+    image: "/assets/tile/WhatsApp Image 2025-12-21 at 1.13.00 PM (2).jpeg",
   },
   {
     id: 6,
     title: "Kitchen Backsplash Tile Installation",
     category: "Tile",
     year: "2024",
-    image: "/tile6.jpeg",
+    image: "/assets/tile/WhatsApp Image 2025-12-21 at 1.13.00 PM.jpeg",
   },
   {
     id: 7,
     title: "Outdoor Staircase Tile",
     category: "Tile",
     year: "2024",
-    image: "/tile7.jpeg",
+    image: "/assets/tile/WhatsApp Image 2025-12-21 at 1.24.20 PM (1).jpeg",
   },
   {
     id: 8,
     title: "Modern Shower Tile with Star Pattern",
     category: "Tile",
     year: "2024",
-    image: "/tile8.jpeg",
+    image: "/assets/tile/WhatsApp Image 2025-12-21 at 1.24.20 PM (2).jpeg",
   },
   {
     id: 9,
     title: "Subway Tile Shower with Mosaic Floor",
     category: "Tile",
     year: "2024",
-    image: "/tile9.jpeg",
+    image: "/assets/tile/WhatsApp Image 2025-12-21 at 1.24.20 PM (3).jpeg",
   },
   {
     id: 10,
     title: "Large Format Marble Shower Tile",
     category: "Tile",
     year: "2024",
-    image: "/tile10.jpeg",
+    image: "/assets/tile/WhatsApp Image 2025-12-21 at 1.24.20 PM.jpeg",
   },
 ]
 
@@ -139,7 +139,7 @@ export function TileProjects() {
             key={project.id}
             className="group relative w-screen sm:w-[60vw] md:w-[45vw] lg:w-[calc((100vw-6rem-4rem)/3)] flex-shrink-0 px-6 sm:px-0 sm:mr-6 md:mr-8"
           >
-            <div className="relative aspect-[3/4] overflow-hidden mb-6">
+            <div className="relative aspect-[3/4] overflow-hidden">
               <img
                 src={project.image || "/placeholder.svg"}
                 alt={project.title}
@@ -155,16 +155,6 @@ export function TileProjects() {
                   <ArrowUpRight className="w-4 h-4" />
                 </button>
               </div>
-            </div>
-
-            <div className="flex items-start justify-between">
-              <div>
-                <h3 className="font-serif text-xl md:text-2xl text-[#1a1a1a] mb-1 group-hover:text-[#a65d3f] transition-colors duration-300">
-                  {project.title}
-                </h3>
-                <span className="text-[11px] tracking-[0.15em] uppercase text-[#6b6560]">{project.category}</span>
-              </div>
-              <span className="text-[11px] tracking-[0.15em] uppercase text-[#6b6560]">{project.year}</span>
             </div>
           </div>
         ))}

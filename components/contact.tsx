@@ -176,26 +176,26 @@ export function Contact() {
                   </h3>
 
                   <div className="space-y-8">
-                    <a href="tel:7605566481" className="flex items-start gap-4 group">
+                    <a href="tel:2068985540" className="flex items-start gap-4 group">
                       <div className="w-12 h-12 border border-[#333] flex items-center justify-center group-hover:border-[#a65d3f] transition-colors duration-300">
                         <Phone className="w-5 h-5 text-[#a65d3f]" />
                       </div>
                       <div>
                         <div className="text-[11px] tracking-[0.15em] uppercase text-[#6b6560] mb-1">Call Us</div>
                         <div className="text-[#f8f6f1] text-lg group-hover:text-[#a65d3f] transition-colors duration-300">
-                          (760) 556-6481
+                          (206) 898-5540
                         </div>
                       </div>
                     </a>
 
-                    <a href="mailto:bravoadrian877@gmail.com" className="flex items-start gap-4 group">
+                    <a href="mailto:bravoconstruction16@gmail.com" className="flex items-start gap-4 group">
                       <div className="w-12 h-12 border border-[#333] flex items-center justify-center group-hover:border-[#a65d3f] transition-colors duration-300">
                         <Mail className="w-5 h-5 text-[#a65d3f]" />
                       </div>
                       <div>
                         <div className="text-[11px] tracking-[0.15em] uppercase text-[#6b6560] mb-1">Primary Email</div>
                         <div className="text-[#f8f6f1] text-lg group-hover:text-[#a65d3f] transition-colors duration-300">
-                          bravoadrian877@gmail.com
+                          bravoconstruction16@gmail.com
                         </div>
                       </div>
                     </a>

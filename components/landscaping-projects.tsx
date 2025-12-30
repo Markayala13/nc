@@ -7,87 +7,73 @@ import { ArrowLeft, ArrowRight, ArrowUpRight } from "lucide-react"
 const projects = [
   {
     id: 1,
-    title: "Front Yard Mulch & Plant Installation",
+    title: "Professional Bush Pruning & Hedge Trimming",
     category: "Landscaping",
     year: "2024",
-    image: "/landscape1.png",
+    image: "/assets/landscaping/bush-pruning-with-hedge-trimmer.jpg",
   },
   {
     id: 2,
-    title: "Backyard Paver Patio Landscape",
+    title: "Front Yard Mulch & Plant Installation",
     category: "Landscaping",
     year: "2024",
-    image: "/landscape2.png",
+    image: "/assets/landscaping/ChatGPT Image 25 dic 2025, 01_17_06 p.m..png",
   },
   {
     id: 3,
-    title: "Garden Bed Mulch Installation",
+    title: "Backyard Paver Patio Landscape",
     category: "Landscaping",
     year: "2024",
-    image: "/landscape3.png",
+    image: "/assets/landscaping/ChatGPT Image 25 dic 2025, 01_17_35 p.m..png",
   },
   {
     id: 4,
-    title: "Residential Mulch Border Design",
+    title: "Garden Bed Mulch Installation",
     category: "Landscaping",
     year: "2024",
-    image: "/landscape4.png",
+    image: "/assets/landscaping/ChatGPT Image Dec 25, 2025, 12_13_16 PM.png",
   },
   {
     id: 5,
-    title: "Backyard Lawn & Border Installation",
+    title: "Residential Mulch Border Design",
     category: "Landscaping",
     year: "2024",
-    image: "/landscape5.png",
+    image: "/assets/landscaping/ChatGPT Image Dec 25, 2025, 12_15_02 PM.png",
   },
   {
     id: 6,
     title: "Front Yard Shrub & Pathway Design",
     category: "Landscaping",
     year: "2024",
-    image: "/landscape6.png",
+    image: "/assets/landscaping/ChatGPT Image Dec 25, 2025, 12_16_41 PM.png",
   },
   {
     id: 7,
-    title: "Professional Bush Pruning & Hedge Trimming",
-    category: "Landscaping",
-    year: "2024",
-    image: "/landscape7.jpg",
-  },
-  {
-    id: 8,
-    title: "Asian Garden Pathway Design",
-    category: "Landscaping",
-    year: "2024",
-    image: "/landscape8.jpg",
-  },
-  {
-    id: 9,
     title: "Colorful Flower Garden Installation",
     category: "Landscaping",
     year: "2024",
-    image: "/landscape9.jpg",
+    image: "/assets/landscaping/colorful-flower-garden.jpg",
   },
   {
-    id: 10,
+    id: 8,
     title: "Contemporary Artificial Grass Front Yard",
     category: "Landscaping",
     year: "2024",
-    image: "/landscape10.jpg",
+    image: "/assets/landscaping/front-yard-contemporary-australian-home-residential-building-showcases-artificial-grass.jpg",
   },
   {
-    id: 11,
+    id: 9,
     title: "Lush Green Lawn Care & Maintenance",
     category: "Landscaping",
     year: "2024",
-    image: "/landscape11.jpg",
+    image: "/assets/landscaping/hydroseeding-garden-decoration-grass-installation-lush-lawn-green-grass-lawn-care-landscape-de.jpg",
   },
   {
-    id: 12,
+    id: 10,
     title: "Garden Planting & Flower Installation",
     category: "Landscaping",
     year: "2024",
-    image: "/landscape12.jpg",
+    image: "/assets/landscaping/planting-flowers-garden-garden-tools-flowers.jpg",
   },
 ]
 
@@ -153,7 +139,7 @@ export function LandscapingProjects() {
             key={project.id}
             className="group relative w-screen sm:w-[60vw] md:w-[45vw] lg:w-[calc((100vw-6rem-4rem)/3)] flex-shrink-0 px-6 sm:px-0 sm:mr-6 md:mr-8"
           >
-            <div className="relative aspect-[3/4] overflow-hidden mb-6">
+            <div className="relative aspect-[3/4] overflow-hidden">
               <img
                 src={project.image || "/placeholder.svg"}
                 alt={project.title}
@@ -169,16 +155,6 @@ export function LandscapingProjects() {
                   <ArrowUpRight className="w-4 h-4" />
                 </button>
               </div>
-            </div>
-
-            <div className="flex items-start justify-between">
-              <div>
-                <h3 className="font-serif text-xl md:text-2xl text-[#1a1a1a] mb-1 group-hover:text-[#a65d3f] transition-colors duration-300">
-                  {project.title}
-                </h3>
-                <span className="text-[11px] tracking-[0.15em] uppercase text-[#6b6560]">{project.category}</span>
-              </div>
-              <span className="text-[11px] tracking-[0.15em] uppercase text-[#6b6560]">{project.year}</span>
             </div>
           </div>
         ))}

@@ -10,56 +10,56 @@ const projects = [
     title: "Stamped Concrete Patio with Rock Border",
     category: "Concrete",
     year: "2024",
-    image: "/concrete1.jpeg",
+    image: "/assets/outdoor driveway/WhatsApp Image 2025-12-21 at 1.18.56 PM (1).jpeg",
   },
   {
     id: 2,
     title: "Large Format Outdoor Concrete Tile",
     category: "Concrete",
     year: "2024",
-    image: "/concrete2.jpeg",
+    image: "/assets/outdoor driveway/WhatsApp Image 2025-12-21 at 1.18.56 PM.jpeg",
   },
   {
     id: 3,
     title: "Decorative Stamped Concrete Pathway",
     category: "Concrete",
     year: "2024",
-    image: "/concrete3.jpeg",
+    image: "/assets/outdoor driveway/WhatsApp Image 2025-12-21 at 1.18.57 PM (1).jpeg",
   },
   {
     id: 4,
     title: "Residential Concrete Driveway",
     category: "Concrete",
     year: "2024",
-    image: "/concrete4.jpeg",
+    image: "/assets/outdoor driveway/WhatsApp Image 2025-12-21 at 1.18.57 PM.jpeg",
   },
   {
     id: 5,
     title: "Outdoor Kitchen Concrete Countertop",
     category: "Concrete",
     year: "2024",
-    image: "/concrete5.jpeg",
+    image: "/assets/outdoor driveway/WhatsApp Image 2025-12-21 at 1.19.08 PM (1).jpeg",
   },
   {
     id: 6,
     title: "Geometric Concrete Patio Design",
     category: "Concrete",
     year: "2024",
-    image: "/concrete6.jpeg",
+    image: "/assets/outdoor driveway/WhatsApp Image 2025-12-21 at 1.19.08 PM (2).jpeg",
   },
   {
     id: 7,
     title: "Backyard Concrete Slab Installation",
     category: "Concrete",
     year: "2024",
-    image: "/concrete7.jpeg",
+    image: "/assets/outdoor driveway/WhatsApp Image 2025-12-21 at 1.19.08 PM.jpeg",
   },
   {
     id: 8,
     title: "Decorative Paver Driveway & Landscape",
     category: "Concrete",
     year: "2024",
-    image: "/concrete8.jpeg",
+    image: "/assets/outdoor driveway/WhatsApp Image 2025-12-21 at 1.38.23 PM.jpeg",
   },
 ]
 
@@ -125,7 +125,7 @@ export function ConcreteProjects() {
             key={project.id}
             className="group relative w-screen sm:w-[60vw] md:w-[45vw] lg:w-[calc((100vw-6rem-4rem)/3)] flex-shrink-0 px-6 sm:px-0 sm:mr-6 md:mr-8"
           >
-            <div className="relative aspect-[3/4] overflow-hidden mb-6">
+            <div className="relative aspect-[3/4] overflow-hidden">
               <img
                 src={project.image || "/placeholder.svg"}
                 alt={project.title}
@@ -141,16 +141,6 @@ export function ConcreteProjects() {
                   <ArrowUpRight className="w-4 h-4" />
                 </button>
               </div>
-            </div>
-
-            <div className="flex items-start justify-between">
-              <div>
-                <h3 className="font-serif text-xl md:text-2xl text-[#1a1a1a] mb-1 group-hover:text-[#a65d3f] transition-colors duration-300">
-                  {project.title}
-                </h3>
-                <span className="text-[11px] tracking-[0.15em] uppercase text-[#6b6560]">{project.category}</span>
-              </div>
-              <span className="text-[11px] tracking-[0.15em] uppercase text-[#6b6560]">{project.year}</span>
             </div>
           </div>
         ))}

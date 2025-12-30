@@ -174,6 +174,7 @@ export function Services() {
                       <img
                         src={service.image || "/placeholder.svg"}
                         alt={service.title}
+                        loading="lazy"
                         className="w-full h-full object-cover"
                       />
                     </div>
