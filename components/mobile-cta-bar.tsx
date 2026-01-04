@@ -30,7 +30,7 @@ export function MobileCTABar() {
           <span className="text-[10px] tracking-[0.1em] uppercase text-[#f8f6f1]">Services</span>
         </button>
         <a
-          href="tel:7605566481"
+          href="tel:2068985540"
           className="flex flex-col items-center justify-center py-3 bg-[#a65d3f] hover:bg-[#8b4a32] transition-colors active:bg-[#8b4a32]"
         >
           <Phone className="w-5 h-5 text-[#f8f6f1] mb-1" />
