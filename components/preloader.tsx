@@ -32,11 +32,11 @@ export function Preloader() {
             className="relative"
           >
             <Image
-              src="/logobg.png"
-              alt="Adrian Bravo - Stucco & Construction"
-              width={612}
-              height={408}
-              className="w-[300px] md:w-[400px] h-auto"
+              src="/assets/logo/logo.png"
+              alt="Padilla's Prestige Remodeling"
+              width={500}
+              height={500}
+              className="w-[200px] md:w-[250px] h-auto"
               priority
             />
 

@@ -7,68 +7,79 @@ import { ArrowUpRight, Plus, Star } from "lucide-react"
 const services = [
   {
     id: "01",
-    title: "Expert Stucco Services",
-    subtitle: "Interior & Exterior",
+    title: "Bathroom Remodeling",
+    subtitle: "Luxury & Functionality",
     description:
-      "We specialize in complete interior and exterior stucco services. Our expertise includes stucco repairs, plastering, and custom finishing techniques including smooth finish and sand finish. We work with both regular and acrylic estucco, handling every phase from latilla (black paper and mesh installation) through scratch and brown coat application to final textures. We create custom textures exactly as the client requests.",
-    image: "/professional-stucco-application-smooth-finish-exte.jpg",
+      "Create your dream bathroom with our comprehensive remodeling services. We specialize in modern, functional designs that enhance comfort and add value to your home. From elegant tile work to premium fixtures, every element is installed with precision and care.",
+    image: "/decorative-concrete-driveway-paving-residential-ho.jpg",
+    video: "/assets/1/batroom_remodeling (1).mp4",
     featured: true,
     details: [
-      "Interior & Exterior Stucco Installation",
-      "Stucco Repairs & Plastering",
-      "Smooth Finish & Sand Finish",
-      "Custom Texture Applications",
-      "Regular & Acrylic Estucco",
-      "Complete Process: Latilla, Scratch & Brown, Final Coat",
-      "FREE Estimates on All Stucco Projects",
+      "Complete Bathroom Renovations",
+      "Shower & Tub Installation",
+      "Tile & Stone Work",
+      "Vanity & Countertop Installation",
+      "Fixture & Plumbing Updates",
+      "Custom Design Solutions",
     ],
   },
   {
     id: "02",
-    title: "Professional Tile Installation",
-    subtitle: "All Surfaces",
+    title: "Kitchen Remodeling",
+    subtitle: "Heart of Your Home",
     description:
-      "Complete interior and exterior tile installation services. We work with all tile materials including ceramic, porcelain, natural stone, and glass tile. Our services cover floors, walls, showers, kitchens, and any surface where tile can be installed. We accommodate custom designs and cuts to match your vision. We also install laminate and wood flooring.",
+      "Complete kitchen transformations that combine functionality with stunning design. From custom cabinetry and countertops to flooring and lighting, we handle every detail. Our personalized approach ensures your new kitchen reflects your style while maximizing space and increasing your home's value.",
     image: "/professional-tile-installation-ceramic-porcelain-b.jpg",
+    video: "/assets/1/cocina_hermosa_de_una_casa_de_dallas.mp4",
     details: [
-      "Ceramic, Porcelain, Natural Stone, Glass Tile",
-      "Floors & Walls Installation",
-      "Shower & Kitchen Tiling",
-      "Custom Designs & Precision Cuts",
-      "Laminate & Wood Flooring",
-      "Interior & Exterior Applications",
+      "Custom Cabinet Installation",
+      "Countertop Replacement (Granite, Quartz, Marble)",
+      "Kitchen Flooring Installation",
+      "Backsplash & Tile Work",
+      "Lighting & Fixture Updates",
+      "Complete Kitchen Renovations",
     ],
   },
   {
     id: "03",
-    title: "Decorative Concrete & Driveways",
-    subtitle: "Residential Concrete",
+    title: "Premium Siding Installation",
+    subtitle: "Exterior Excellence",
     description:
-      "Complete concrete services for decorative and paved driveways. We handle all concrete work around residential properties including sidewalks, walkways, driveways, and patios. Custom designs created to match your specifications.",
-    image: "/decorative-concrete-driveway-paving-residential-ho.jpg",
+      "Transform your home's exterior with our expert siding installation services. We specialize in high-quality siding materials that not only enhance curb appeal but also provide lasting protection and energy efficiency. Our meticulous installation process ensures durability and impeccable finishes that stand the test of time.",
+    image: "/professional-stucco-application-smooth-finish-exte.jpg",
+    video: "/assets/1/media.mp4",
     details: [
-      "Decorative Concrete",
-      "Paved Driveways",
-      "Sidewalks (Banquetas)",
-      "Walkways & Paths",
-      "Residential Concrete Floors",
-      "Custom Decorative Designs",
+      "Vinyl Siding Installation",
+      "Fiber Cement Siding",
+      "Wood & Engineered Wood Siding",
+      "Siding Repair & Replacement",
+      "Weather-Resistant Materials",
+      "Energy-Efficient Solutions",
+      "FREE Estimates on All Siding Projects",
     ],
   },
   {
     id: "04",
-    title: "Landscaping Services",
-    subtitle: "Property Beautification",
-    description: "Professional landscaping services to complete your property's transformation.",
+    title: "Flooring & Painting",
+    subtitle: "Foundation & Finish",
+    description: "Professional flooring installation and painting services that bring your vision to life. We work with premium materials and proven techniques to deliver flawless results that enhance every room in your home.",
     image: "/professional-landscaping-residential-property-san-.jpg",
-    details: ["Landscape Design & Installation", "Residential Landscaping", "Property Beautification"],
+    video: "/assets/1/2.2.mp4",
+    details: [
+      "Hardwood Flooring Installation",
+      "Tile & Laminate Flooring",
+      "Interior Painting",
+      "Exterior Painting",
+      "Surface Preparation & Finishing",
+      "Color Consultation Available",
+    ],
   },
 ]
 
 export function Services() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: "-100px" })
-  const [activeService, setActiveService] = useState<string | null>("01") // Stucco open by default
+  const [activeService, setActiveService] = useState<string | null>("01") // Siding open by default
 
   return (
     <section id="services" className="py-24 md:py-40 bg-[#1a1a1a] relative" ref={ref}>
@@ -94,8 +105,8 @@ export function Services() {
             className="mb-16 md:mb-24"
           >
             <h2 className="font-serif text-4xl md:text-6xl lg:text-7xl text-[#f8f6f1] leading-[1.1]">
-              Professional <span className="italic text-[#a65d3f]">stucco</span>
-              <br className="hidden md:block" /> & construction services
+              Professional <span className="italic text-[#a65d3f]">remodeling</span>
+              <br className="hidden md:block" /> that transforms homes
             </h2>
           </motion.div>
 
@@ -171,12 +182,23 @@ export function Services() {
                       )}
                     </div>
                     <div className="aspect-[3/2] overflow-hidden">
-                      <img
-                        src={service.image || "/placeholder.svg"}
-                        alt={service.title}
-                        loading="lazy"
-                        className="w-full h-full object-cover"
-                      />
+                      {service.video ? (
+                        <video
+                          src={service.video}
+                          autoPlay
+                          loop
+                          muted
+                          playsInline
+                          className="w-full h-full object-cover"
+                        />
+                      ) : (
+                        <img
+                          src={service.image || "/placeholder.svg"}
+                          alt={service.title}
+                          loading="lazy"
+                          className="w-full h-full object-cover"
+                        />
+                      )}
                     </div>
                   </div>
                 </motion.div>
@@ -192,7 +214,7 @@ export function Services() {
             className="mt-16 md:mt-24 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-8"
           >
             <p className="text-[#6b6560] max-w-md">
-              Ready to start your project? Contact us today for a free estimate on any of our services.
+              Ready to transform your home? Contact us today for a free estimate and discover how we can bring your vision to life.
             </p>
             <button
               onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}

@@ -19,7 +19,7 @@ export function Contact() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     console.log("Form submitted:", formData)
-    alert("Thank you for your inquiry. We'll be in touch within 24 hours.")
+    alert("Thank you for your inquiry! We'll respond within 24 hours with your free estimate.")
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -55,7 +55,7 @@ export function Contact() {
                 <span className="italic text-[#a65d3f]">free estimate</span>
               </h2>
               <p className="text-[#6b6560] mb-10 max-w-md">
-                Tell us about your project. We'll respond within 24 hours with a free, no-obligation estimate.
+                Tell us about your remodeling project. We'll respond within 24 hours with a free, no-obligation estimate tailored to your needs.
               </p>
 
               <form onSubmit={handleSubmit} className="space-y-6">
@@ -124,10 +124,10 @@ export function Contact() {
                     className="w-full px-0 py-3 bg-transparent border-0 border-b border-[#e8e4dc] text-[#1a1a1a] focus:border-[#a65d3f] focus:outline-none transition-colors duration-300"
                   >
                     <option value="">Select a service</option>
-                    <option value="stucco">Stucco Services</option>
-                    <option value="tile">Tile Installation</option>
-                    <option value="concrete">Decorative Concrete & Driveways</option>
-                    <option value="landscaping">Landscaping</option>
+                    <option value="siding">Premium Siding Installation</option>
+                    <option value="kitchen">Kitchen Remodeling</option>
+                    <option value="bathroom">Bathroom Remodeling</option>
+                    <option value="flooring">Flooring & Painting</option>
                     <option value="multiple">Multiple Services</option>
                   </select>
                 </div>
@@ -145,7 +145,7 @@ export function Contact() {
                     rows={4}
                     value={formData.message}
                     onChange={handleChange}
-                    placeholder="Tell us about your project..."
+                    placeholder="Tell us about your remodeling project..."
                     className="w-full px-0 py-3 bg-transparent border-0 border-b border-[#e8e4dc] text-[#1a1a1a] focus:border-[#a65d3f] focus:outline-none transition-colors duration-300 resize-none"
                   />
                 </div>
@@ -154,7 +154,7 @@ export function Contact() {
                   type="submit"
                   className="group flex items-center gap-3 text-[13px] tracking-[0.15em] uppercase text-[#f8f6f1] bg-[#1a1a1a] px-8 py-4 hover:bg-[#a65d3f] transition-all duration-500 mt-8"
                 >
-                  Get FREE Stucco Estimate
+                  Get FREE Estimate
                   <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" />
                 </button>
               </form>
@@ -176,40 +176,26 @@ export function Contact() {
                   </h3>
 
                   <div className="space-y-8">
-                    <a href="tel:2068985540" className="flex items-start gap-4 group">
+                    <a href="tel:+12148105012" className="flex items-start gap-4 group">
                       <div className="w-12 h-12 border border-[#333] flex items-center justify-center group-hover:border-[#a65d3f] transition-colors duration-300">
                         <Phone className="w-5 h-5 text-[#a65d3f]" />
                       </div>
                       <div>
                         <div className="text-[11px] tracking-[0.15em] uppercase text-[#6b6560] mb-1">Call Us</div>
                         <div className="text-[#f8f6f1] text-lg group-hover:text-[#a65d3f] transition-colors duration-300">
-                          (206) 898-5540
+                          +1 (214) 810-5012
                         </div>
                       </div>
                     </a>
 
-                    <a href="mailto:bravoconstruction16@gmail.com" className="flex items-start gap-4 group">
+                    <a href="mailto:padillajose662@gmail.com" className="flex items-start gap-4 group">
                       <div className="w-12 h-12 border border-[#333] flex items-center justify-center group-hover:border-[#a65d3f] transition-colors duration-300">
                         <Mail className="w-5 h-5 text-[#a65d3f]" />
                       </div>
                       <div>
-                        <div className="text-[11px] tracking-[0.15em] uppercase text-[#6b6560] mb-1">Primary Email</div>
-                        <div className="text-[#f8f6f1] text-lg group-hover:text-[#a65d3f] transition-colors duration-300">
-                          bravoconstruction16@gmail.com
-                        </div>
-                      </div>
-                    </a>
-
-                    <a href="mailto:aracelyfernandez399@gmail.com" className="flex items-start gap-4 group">
-                      <div className="w-12 h-12 border border-[#333] flex items-center justify-center group-hover:border-[#a65d3f] transition-colors duration-300">
-                        <Mail className="w-5 h-5 text-[#a65d3f]" />
-                      </div>
-                      <div>
-                        <div className="text-[11px] tracking-[0.15em] uppercase text-[#6b6560] mb-1">
-                          Customer Service
-                        </div>
+                        <div className="text-[11px] tracking-[0.15em] uppercase text-[#6b6560] mb-1">Email Us</div>
                         <div className="text-[#f8f6f1] text-lg group-hover:text-[#a65d3f] transition-colors duration-300 break-all">
-                          aracelyfernandez399@gmail.com
+                          padillajose662@gmail.com
                         </div>
                       </div>
                     </a>
@@ -221,9 +207,9 @@ export function Contact() {
                       <div>
                         <div className="text-[11px] tracking-[0.15em] uppercase text-[#6b6560] mb-1">Service Area</div>
                         <div className="text-[#f8f6f1] text-lg">
-                          All of San Diego County
+                          Dallas-Fort Worth Metroplex
                           <br />
-                          <span className="text-[#6b6560] text-base">Specialized in coastal areas</span>
+                          <span className="text-[#6b6560] text-base">Serving all of DFW</span>
                         </div>
                       </div>
                     </div>
@@ -233,7 +219,7 @@ export function Contact() {
                 <div className="mt-12 pt-8 border-t border-[#333]">
                   <div className="text-[11px] tracking-[0.15em] uppercase text-[#6b6560] mb-4">Experience</div>
                   <div className="flex flex-wrap gap-4 text-sm text-[#c4bdb2]">
-                    <span>8+ Years Company</span>
+                    <span>10+ Years Company</span>
                     <span>•</span>
                     <span>30+ Years Team Experience</span>
                     <span>•</span>

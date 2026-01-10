@@ -7,73 +7,10 @@ import { ArrowLeft, ArrowRight, ArrowUpRight } from "lucide-react"
 const projects = [
   {
     id: 1,
-    title: "Professional Bush Pruning & Hedge Trimming",
-    category: "Landscaping",
-    year: "2024",
-    image: "/assets/landscaping/bush-pruning-with-hedge-trimmer.jpg",
-  },
-  {
-    id: 2,
-    title: "Front Yard Mulch & Plant Installation",
-    category: "Landscaping",
-    year: "2024",
-    image: "/assets/landscaping/ChatGPT Image 25 dic 2025, 01_17_06 p.m..png",
-  },
-  {
-    id: 3,
-    title: "Backyard Paver Patio Landscape",
-    category: "Landscaping",
-    year: "2024",
-    image: "/assets/landscaping/ChatGPT Image 25 dic 2025, 01_17_35 p.m..png",
-  },
-  {
-    id: 4,
-    title: "Garden Bed Mulch Installation",
-    category: "Landscaping",
-    year: "2024",
-    image: "/assets/landscaping/ChatGPT Image Dec 25, 2025, 12_13_16 PM.png",
-  },
-  {
-    id: 5,
-    title: "Residential Mulch Border Design",
-    category: "Landscaping",
-    year: "2024",
-    image: "/assets/landscaping/ChatGPT Image Dec 25, 2025, 12_15_02 PM.png",
-  },
-  {
-    id: 6,
-    title: "Front Yard Shrub & Pathway Design",
-    category: "Landscaping",
-    year: "2024",
-    image: "/assets/landscaping/ChatGPT Image Dec 25, 2025, 12_16_41 PM.png",
-  },
-  {
-    id: 7,
-    title: "Colorful Flower Garden Installation",
-    category: "Landscaping",
-    year: "2024",
-    image: "/assets/landscaping/colorful-flower-garden.jpg",
-  },
-  {
-    id: 8,
-    title: "Contemporary Artificial Grass Front Yard",
-    category: "Landscaping",
-    year: "2024",
-    image: "/assets/landscaping/front-yard-contemporary-australian-home-residential-building-showcases-artificial-grass.jpg",
-  },
-  {
-    id: 9,
-    title: "Lush Green Lawn Care & Maintenance",
-    category: "Landscaping",
-    year: "2024",
-    image: "/assets/landscaping/hydroseeding-garden-decoration-grass-installation-lush-lawn-green-grass-lawn-care-landscape-de.jpg",
-  },
-  {
-    id: 10,
-    title: "Garden Planting & Flower Installation",
-    category: "Landscaping",
-    year: "2024",
-    image: "/assets/landscaping/planting-flowers-garden-garden-tools-flowers.jpg",
+    title: "Professional Flooring Installation",
+    category: "Flooring",
+    year: "2026",
+    image: "/assets/floor.png",
   },
 ]
 
@@ -118,7 +55,7 @@ export function LandscapingProjects() {
               transition={{ duration: 1, delay: 0.2 }}
               className="font-serif text-4xl md:text-6xl lg:text-7xl text-[#1a1a1a] leading-[1.1]"
             >
-              Landscaping
+              Flooring & Painting
               <br />
               <span className="italic text-[#a65d3f]">projects</span>
             </motion.h2>

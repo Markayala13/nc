@@ -2,35 +2,38 @@
 
 import { motion, useInView } from "framer-motion"
 import { useRef, useState, useEffect } from "react"
-import { Star, ArrowLeft, ArrowRight, Quote } from "lucide-react"
+import { Star, ArrowLeft, ArrowRight, Quote, User } from "lucide-react"
 
 const testimonials = [
   {
     id: 1,
     name: "Maria Rodriguez",
-    title: "Homeowner, La Jolla",
+    title: "Homeowner, Plano",
     quote:
-      "Adrian and his team did an exceptional job on our exterior stucco. The smooth finish is flawless and they completed the work on time. Highly recommend for any stucco project in San Diego.",
+      "Jose and his team did an exceptional job on our premium siding installation. The finish is flawless and they completed the work on time. Highly recommend for any remodeling project in DFW.",
     rating: 5,
-    project: "Exterior Stucco",
+    project: "Siding Installation",
+    image: "/assets/testimonial/maria.png",
   },
   {
     id: 2,
     name: "David Thompson",
-    title: "Homeowner, Coronado",
+    title: "Homeowner, Frisco",
     quote:
-      "Professional, punctual, and meticulous. The tile work in our bathroom exceeded our expectations. They handled everything from custom cuts to installation with precision.",
+      "Professional, punctual, and meticulous. The bathroom remodeling exceeded our expectations. They handled everything from tile work to fixtures with precision.",
     rating: 5,
-    project: "Tile Installation",
+    project: "Bathroom Remodeling",
+    image: "/assets/testimonial/david.png",
   },
   {
     id: 3,
     name: "Jennifer Martinez",
-    title: "Homeowner, Carlsbad",
+    title: "Homeowner, Arlington",
     quote:
-      "From quote to completion, the experience was seamless. Our new decorative concrete driveway looks amazing. The team was professional and left the site clean every day.",
+      "From quote to completion, the experience was seamless. Our new kitchen looks amazing. The team was professional and left the site clean every day.",
     rating: 5,
-    project: "Decorative Concrete",
+    project: "Kitchen Remodeling",
+    image: "/assets/testimonial/jennifer.png",
   },
 ]
 
@@ -102,7 +105,7 @@ export function Reviews() {
               </div>
 
               <p className="text-[#f8f6f1]/80 mb-12 max-w-md">
-                Trusted by homeowners throughout San Diego County. Our reputation is built on delivering quality
+                Trusted by homeowners throughout the Dallas-Fort Worth metroplex. Our reputation is built on delivering quality
                 craftsmanship, one project at a time.
               </p>
 
@@ -140,6 +143,15 @@ export function Reviews() {
                 exit={{ opacity: 0, x: -20 }}
                 transition={{ duration: 0.5 }}
               >
+                <div className="mb-6">
+                  <div className="w-12 h-12 rounded-full overflow-hidden border border-[#f8f6f1]/20">
+                    <img
+                      src={testimonials[activeIndex].image}
+                      alt={testimonials[activeIndex].name}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
                 <blockquote className="font-serif text-2xl md:text-3xl lg:text-4xl text-[#f8f6f1] leading-[1.4] mb-10">
                   "{testimonials[activeIndex].quote}"
                 </blockquote>

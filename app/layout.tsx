@@ -21,9 +21,9 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "Adrian Bravo | Stucco & Construction Services",
+  title: "Padilla's Prestige Remodeling | Dallas-Fort Worth Remodeling Services",
   description:
-    "Professional stucco, tile, concrete, landscaping, roofing, and fence services for San Diego County. Expert craftsmanship for your home.",
+    "Professional interior and exterior remodeling services in DFW. Specializing in siding installation, kitchen remodeling, bathroom remodeling, flooring, and painting. Expert craftsmanship for your home.",
   generator: "v0.app",
   icons: {
     icon: "/icon.png",

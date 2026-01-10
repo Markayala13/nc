@@ -7,59 +7,45 @@ import { ArrowLeft, ArrowRight, ArrowUpRight } from "lucide-react"
 const projects = [
   {
     id: 1,
-    title: "Stamped Concrete Patio with Rock Border",
-    category: "Concrete",
-    year: "2024",
-    image: "/assets/outdoor driveway/WhatsApp Image 2025-12-21 at 1.18.56 PM (1).jpeg",
+    title: "Kitchen Remodeling Project",
+    category: "Kitchen",
+    year: "2026",
+    image: "/assets/kitchen/WhatsApp Image 2026-01-07 at 1.54.54 PM.jpeg",
   },
   {
     id: 2,
-    title: "Large Format Outdoor Concrete Tile",
-    category: "Concrete",
-    year: "2024",
-    image: "/assets/outdoor driveway/WhatsApp Image 2025-12-21 at 1.18.56 PM.jpeg",
+    title: "Kitchen Remodeling Project",
+    category: "Kitchen",
+    year: "2026",
+    image: "/assets/kitchen/WhatsApp Image 2026-01-07 at 1.54.59 PM (1).jpeg",
   },
   {
     id: 3,
-    title: "Decorative Stamped Concrete Pathway",
-    category: "Concrete",
-    year: "2024",
-    image: "/assets/outdoor driveway/WhatsApp Image 2025-12-21 at 1.18.57 PM (1).jpeg",
+    title: "Kitchen Remodeling Project",
+    category: "Kitchen",
+    year: "2026",
+    image: "/assets/kitchen/WhatsApp Image 2026-01-09 at 12.12.52 AM (4).jpeg",
   },
   {
     id: 4,
-    title: "Residential Concrete Driveway",
-    category: "Concrete",
-    year: "2024",
-    image: "/assets/outdoor driveway/WhatsApp Image 2025-12-21 at 1.18.57 PM.jpeg",
+    title: "Kitchen Remodeling Project",
+    category: "Kitchen",
+    year: "2026",
+    image: "/assets/kitchen/WhatsApp Image 2026-01-09 at 12.12.52 AM (5).jpeg",
   },
   {
     id: 5,
-    title: "Outdoor Kitchen Concrete Countertop",
-    category: "Concrete",
-    year: "2024",
-    image: "/assets/outdoor driveway/WhatsApp Image 2025-12-21 at 1.19.08 PM (1).jpeg",
+    title: "Kitchen Remodeling Project",
+    category: "Kitchen",
+    year: "2026",
+    image: "/assets/kitchen/WhatsApp Image 2026-01-09 at 12.12.52 AM (6).jpeg",
   },
   {
     id: 6,
-    title: "Geometric Concrete Patio Design",
-    category: "Concrete",
-    year: "2024",
-    image: "/assets/outdoor driveway/WhatsApp Image 2025-12-21 at 1.19.08 PM (2).jpeg",
-  },
-  {
-    id: 7,
-    title: "Backyard Concrete Slab Installation",
-    category: "Concrete",
-    year: "2024",
-    image: "/assets/outdoor driveway/WhatsApp Image 2025-12-21 at 1.19.08 PM.jpeg",
-  },
-  {
-    id: 8,
-    title: "Decorative Paver Driveway & Landscape",
-    category: "Concrete",
-    year: "2024",
-    image: "/assets/outdoor driveway/WhatsApp Image 2025-12-21 at 1.38.23 PM.jpeg",
+    title: "Kitchen Remodeling Project",
+    category: "Kitchen",
+    year: "2026",
+    image: "/assets/kitchen/WhatsApp Image 2026-01-09 at 12.12.52 AM (7).jpeg",
   },
 ]
 
@@ -104,9 +90,9 @@ export function ConcreteProjects() {
               transition={{ duration: 1, delay: 0.2 }}
               className="font-serif text-4xl md:text-6xl lg:text-7xl text-[#1a1a1a] leading-[1.1]"
             >
-              Concrete &
+              Kitchen Remodeling
               <br />
-              <span className="italic text-[#a65d3f]">Driveways</span>
+              <span className="italic text-[#a65d3f]">projects</span>
             </motion.h2>
           </div>
         </div>

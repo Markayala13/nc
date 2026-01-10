@@ -27,7 +27,7 @@ export function Header() {
     <>
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-700 ${
-          scrolled ? "bg-[#f8f6f1]/90 backdrop-blur-md" : "bg-transparent"
+          scrolled ? "bg-[#FFF8F0]/90 backdrop-blur-md" : "bg-transparent"
         }`}
       >
         <div className="flex items-center justify-between px-6 md:px-12 h-32 md:h-40">
@@ -36,14 +36,14 @@ export function Header() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.5 }}
-            className="flex items-center -ml-16 md:ml-0"
+            className="flex items-center md:ml-0"
           >
             <Image
-              src="/logobg.png"
-              alt="Adrian Bravo - Stucco & Construction"
-              width={612}
-              height={408}
-              className="w-64 md:w-80 h-auto mt-10 md:mt-20"
+              src="/assets/logo/logo.png"
+              alt="Padilla's Prestige Remodeling"
+              width={500}
+              height={500}
+              className="w-32 md:w-40 h-auto"
               priority
             />
           </motion.div>
@@ -59,11 +59,11 @@ export function Header() {
               <button
                 key={item}
                 onClick={() => scrollToSection(item.toLowerCase())}
-                className="group relative text-[13px] tracking-[0.15em] uppercase text-[#1a1a1a] hover:text-[#a65d3f] transition-colors duration-500"
+                className="group relative text-[13px] tracking-[0.15em] uppercase text-[#4A5568] hover:text-[#D67D3E] transition-colors duration-500"
               >
                 <span className="relative">
                   {item}
-                  <span className="absolute -bottom-1 left-0 w-0 h-px bg-[#a65d3f] group-hover:w-full transition-all duration-500" />
+                  <span className="absolute -bottom-1 left-0 w-0 h-px bg-[#D67D3E] group-hover:w-full transition-all duration-500" />
                 </span>
               </button>
             ))}
@@ -78,9 +78,9 @@ export function Header() {
           >
             <button
               onClick={() => scrollToSection("contact")}
-              className="hidden md:flex items-center gap-2 text-[13px] tracking-[0.15em] uppercase text-[#f8f6f1] bg-[#1a1a1a] px-6 py-3 hover:bg-[#a65d3f] transition-colors duration-500"
+              className="hidden md:flex items-center gap-2 text-[13px] tracking-[0.15em] uppercase text-white bg-[#D67D3E] px-6 py-3 hover:bg-[#4A5568] transition-colors duration-500"
             >
-              Free Stucco Estimate
+              Free Estimate
               <ArrowUpRight className="w-4 h-4" />
             </button>
 
@@ -91,11 +91,11 @@ export function Header() {
               aria-label="Toggle menu"
             >
               <span
-                className={`w-6 h-px bg-[#1a1a1a] transition-all duration-300 ${menuOpen ? "rotate-45 translate-y-2" : ""}`}
+                className={`w-6 h-px bg-[#4A5568] transition-all duration-300 ${menuOpen ? "rotate-45 translate-y-2" : ""}`}
               />
-              <span className={`w-6 h-px bg-[#1a1a1a] transition-all duration-300 ${menuOpen ? "opacity-0" : ""}`} />
+              <span className={`w-6 h-px bg-[#4A5568] transition-all duration-300 ${menuOpen ? "opacity-0" : ""}`} />
               <span
-                className={`w-6 h-px bg-[#1a1a1a] transition-all duration-300 ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`}
+                className={`w-6 h-px bg-[#4A5568] transition-all duration-300 ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`}
               />
             </button>
           </motion.div>
@@ -110,7 +110,7 @@ export function Header() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.5 }}
-            className="fixed inset-0 z-40 bg-[#a65d3f] flex items-center justify-center lg:hidden"
+            className="fixed inset-0 z-40 bg-[#D67D3E] flex items-center justify-center lg:hidden"
           >
             <nav className="flex flex-col items-center gap-8">
               {navItems.map((item, i) => (
@@ -121,7 +121,7 @@ export function Header() {
                   exit={{ opacity: 0, y: -20 }}
                   transition={{ duration: 0.5, delay: i * 0.1 }}
                   onClick={() => scrollToSection(item.toLowerCase())}
-                  className="font-serif text-4xl text-[#f8f6f1] hover:text-[#1a1a1a] transition-colors duration-300"
+                  className="font-serif text-4xl text-white hover:text-[#4A5568] transition-colors duration-300"
                 >
                   {item}
                 </motion.button>
@@ -132,9 +132,9 @@ export function Header() {
                 exit={{ opacity: 0, y: -20 }}
                 transition={{ duration: 0.5, delay: 0.4 }}
                 onClick={() => scrollToSection("contact")}
-                className="mt-4 text-[13px] tracking-[0.15em] uppercase text-[#1a1a1a] bg-[#f8f6f1] px-8 py-4"
+                className="mt-4 text-[13px] tracking-[0.15em] uppercase text-[#4A5568] bg-white px-8 py-4"
               >
-                Free Stucco Estimate
+                Free Estimate
               </motion.button>
             </nav>
           </motion.div>

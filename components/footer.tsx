@@ -25,7 +25,7 @@ export function Footer() {
                 <span className="italic text-[#a65d3f]">your project?</span>
               </h2>
               <p className="text-[#6b6560] max-w-md">
-                Let's discuss your stucco, tile, concrete, or landscaping project and bring your vision to life.
+                Let's discuss your remodeling project and bring your vision to life with quality craftsmanship.
               </p>
             </div>
             <button
@@ -44,20 +44,20 @@ export function Footer() {
               <div className="mb-6">
                 <Image
                   src="/logobg.png"
-                  alt="Adrian Bravo - Stucco & Construction"
+                  alt="Padilla's Prestige Remodeling"
                   width={612}
                   height={408}
                   className="w-[450px] md:w-[600px] h-auto"
                 />
               </div>
               <p className="text-[#6b6560] max-w-sm leading-relaxed mb-8">
-                Professional stucco, tile, concrete, and landscaping services for San Diego County homeowners who demand
-                quality craftsmanship.
+                Professional interior and exterior remodeling services for Dallas-Fort Worth homeowners who demand
+                quality craftsmanship and impeccable results.
               </p>
               <div className="flex gap-6 text-[11px] tracking-[0.15em] uppercase text-[#6b6560]">
-                <span>8+ Years</span>
+                <span>10+ Years</span>
                 <span>•</span>
-                <span>San Diego County</span>
+                <span>DFW Metroplex</span>
                 <span>•</span>
                 <span>Free Estimates</span>
               </div>
@@ -86,24 +86,34 @@ export function Footer() {
               <ul className="space-y-4">
                 <li>
                   <a
-                    href="mailto:bravoadrian877@gmail.com"
+                    href="tel:+12148105012"
                     className="text-[#c4bdb2] hover:text-[#a65d3f] transition-colors duration-300 text-sm"
                   >
-                    bravoadrian877@gmail.com
+                    +1 (214) 810-5012
                   </a>
                 </li>
                 <li>
                   <a
-                    href="mailto:aracelyfernandez399@gmail.com"
+                    href="mailto:padillajose662@gmail.com"
                     className="text-[#c4bdb2] hover:text-[#a65d3f] transition-colors duration-300 text-sm"
                   >
-                    aracelyfernandez399@gmail.com
+                    padillajose662@gmail.com
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=61582726610574"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#c4bdb2] hover:text-[#a65d3f] transition-colors duration-300 text-sm"
+                  >
+                    Follow us on Facebook
                   </a>
                 </li>
                 <li className="pt-2 text-[#6b6560]">
-                  San Diego County
+                  Dallas-Fort Worth Metroplex
                   <br />
-                  Coastal areas specialty
+                  Serving all of DFW
                 </li>
               </ul>
             </div>
@@ -112,7 +122,7 @@ export function Footer() {
           {/* Bottom section - Updated copyright */}
           <div className="flex flex-col sm:flex-row justify-between items-center gap-6 pt-8 border-t border-[#333]">
             <div className="text-[#6b6560] text-sm">
-              © {new Date().getFullYear()} Adrian Bravo Stucco & Construction Services. All rights reserved.
+              © {new Date().getFullYear()} Padilla's Prestige Remodeling. All rights reserved.
             </div>
             <button
               onClick={scrollToTop}

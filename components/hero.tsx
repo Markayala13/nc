@@ -20,15 +20,15 @@ export function Hero() {
   }
 
   return (
-    <section className="relative min-h-screen bg-[#f8f6f1] overflow-hidden">
+    <section className="relative min-h-screen bg-[#FFF8F0] overflow-hidden">
       {/* Grid overlay for architectural feel */}
-      <div className="absolute inset-0 z-0 pointer-events-none opacity-[0.03]">
+      <div className="absolute inset-0 z-0 pointer-events-none opacity-[0.04]">
         <div
           className="h-full w-full"
           style={{
             backgroundImage: `
-            linear-gradient(to right, #1a1a1a 1px, transparent 1px),
-            linear-gradient(to bottom, #1a1a1a 1px, transparent 1px)
+            linear-gradient(to right, #D67D3E 1px, transparent 1px),
+            linear-gradient(to bottom, #D67D3E 1px, transparent 1px)
           `,
             backgroundSize: "100px 100px",
           }}
@@ -44,9 +44,9 @@ export function Hero() {
           transition={{ duration: 1, delay: 0.5 }}
           className="pt-28 md:pt-32 px-6 md:px-12 flex justify-between items-start"
         >
-          <div className="hidden lg:flex items-center gap-12 text-[11px] tracking-[0.3em] uppercase text-[#6b6560] ml-auto">
-            <span>San Diego County</span>
-            <span>Expert Stucco Services</span>
+          <div className="hidden lg:flex items-center gap-12 text-[11px] tracking-[0.3em] uppercase text-[#707070] ml-auto">
+            <span>Dallas TX</span>
+            <span>Expert Tile & Bathroom Remodeling</span>
           </div>
         </motion.div>
 
@@ -56,22 +56,22 @@ export function Hero() {
           style={{ y: mounted ? textY : 0, opacity: mounted ? opacity : 1 }}
         >
           <div className="w-full max-w-[1400px] mx-auto">
-            <motion.h1 className="font-serif text-[12vw] md:text-[10vw] lg:text-[8vw] leading-[0.9] tracking-[-0.02em] text-[#1a1a1a] text-center">
+            <motion.h1 className="font-serif text-[12vw] md:text-[10vw] lg:text-[8vw] leading-[0.9] tracking-[-0.02em] text-[#4A5568] text-center">
               <motion.span
                 initial={{ opacity: 0, y: 100 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1.2, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
                 className="block font-light"
               >
-                Expert stucco
+                Expert tile
               </motion.span>
               <motion.span
                 initial={{ opacity: 0, y: 100 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1.2, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
-                className="block font-light italic text-[#a65d3f]"
+                className="block font-light italic text-[#D67D3E]"
               >
-                & construction
+                & bathroom remodeling
               </motion.span>
             </motion.h1>
 
@@ -80,10 +80,9 @@ export function Hero() {
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.9 }}
-              className="text-center mt-8 md:mt-12 text-[15px] md:text-lg text-[#6b6560] max-w-xl mx-auto leading-relaxed tracking-wide"
+              className="text-center mt-8 md:mt-12 text-[15px] md:text-lg text-[#707070] max-w-xl mx-auto leading-relaxed tracking-wide"
             >
-              Professional stucco, tile, concrete, and landscaping services for San Diego County homeowners who demand
-              quality craftsmanship.
+              Professional tile installation, bathroom renovation, and siding services for Dallas TX homeowners who demand quality craftsmanship.
             </motion.p>
 
             {/* CTAs - Updated button text */}
@@ -95,14 +94,14 @@ export function Hero() {
             >
               <button
                 onClick={() => scrollToSection("contact")}
-                className="group flex items-center gap-3 text-[13px] tracking-[0.15em] uppercase text-[#f8f6f1] bg-[#1a1a1a] px-8 py-4 hover:bg-[#a65d3f] transition-all duration-500"
+                className="group flex items-center gap-3 text-[13px] tracking-[0.15em] uppercase text-white bg-[#D67D3E] px-8 py-4 hover:bg-[#4A5568] transition-all duration-500"
               >
-                Get FREE Stucco Estimate
+                Get FREE Estimate
                 <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" />
               </button>
               <button
                 onClick={() => scrollToSection("projects")}
-                className="group flex items-center gap-3 text-[13px] tracking-[0.15em] uppercase text-[#1a1a1a] hover:text-[#a65d3f] transition-colors duration-300"
+                className="group flex items-center gap-3 text-[13px] tracking-[0.15em] uppercase text-[#4A5568] hover:text-[#D67D3E] transition-colors duration-300"
               >
                 View Our Work
                 <span className="w-8 h-px bg-current group-hover:w-12 transition-all duration-300" />
@@ -121,11 +120,11 @@ export function Hero() {
         >
           <div className="absolute inset-x-6 md:inset-x-12 inset-y-0 overflow-hidden">
             <img
-              src="/professional-stucco-exterior-work-on-luxury-home-s.jpg"
-              alt="Professional stucco work"
+              src="/assets/hero/hero.jpeg"
+              alt="Professional tile and bathroom remodeling"
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#f8f6f1] via-transparent to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#FFF8F0] via-[#FFF8F0]/50 to-transparent" />
           </div>
         </motion.div>
 
@@ -136,12 +135,12 @@ export function Hero() {
           transition={{ duration: 1, delay: 1.8 }}
           className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3"
         >
-          <span className="text-[10px] tracking-[0.3em] uppercase text-[#6b6560]">Scroll</span>
+          <span className="text-[10px] tracking-[0.3em] uppercase text-[#707070]">Scroll</span>
           <motion.div
             animate={{ y: [0, 8, 0] }}
             transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
           >
-            <ArrowDown className="w-4 h-4 text-[#a65d3f]" />
+            <ArrowDown className="w-4 h-4 text-[#D67D3E]" />
           </motion.div>
         </motion.div>
       </div>

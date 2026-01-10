@@ -1,21 +1,21 @@
 "use client"
 
 import { motion, useInView } from "framer-motion"
-import { useRef, useState } from "react"
-import { Play } from "lucide-react"
+import { useRef } from "react"
+const videos = [
+  { id: 1, src: "/assets/video/WhatsApp Video 2026-01-07 at 1.53.57 PM.mp4" },
+  { id: 3, src: "/assets/video/WhatsApp Video 2026-01-07 at 1.54.07 PM.mp4" },
+  { id: 4, src: "/assets/video/WhatsApp Video 2026-01-07 at 1.54.10 PM.mp4" },
+  { id: 5, src: "/assets/video/WhatsApp Video 2026-01-07 at 1.54.13 PM.mp4" },
+  { id: 6, src: "/assets/video/WhatsApp Video 2026-01-07 at 1.54.23 PM.mp4" },
+  { id: 7, src: "/assets/video/WhatsApp Video 2026-01-07 at 1.54.47 PM.mp4" },
+  { id: 8, src: "/assets/video/WhatsApp Video 2026-01-07 at 1.55.04 PM.mp4" },
+  { id: 9, src: "/assets/video/WhatsApp Video 2026-01-07 at 1.55.21 PM.mp4" },
+]
 
 export function VideoSection() {
   const ref = useRef(null)
-  const videoRef = useRef<HTMLVideoElement>(null)
   const isInView = useInView(ref, { once: true, margin: "-100px" })
-  const [isPlaying, setIsPlaying] = useState(false)
-
-  const handlePlayClick = () => {
-    if (videoRef.current) {
-      videoRef.current.play()
-      setIsPlaying(true)
-    }
-  }
 
   return (
     <section id="video" className="py-24 md:py-40 bg-[#1a1a1a] relative overflow-hidden" ref={ref}>
@@ -56,42 +56,39 @@ export function VideoSection() {
               <span className="italic text-[#a65d3f]">craftsmanship</span>
             </h2>
             <p className="text-[#c4bdb2] text-lg max-w-2xl mx-auto">
-              Watch how we transform homes throughout San Diego County with professional stucco, tile, and construction services.
+              Watch how we transform homes throughout the DFW metroplex with professional remodeling services.
             </p>
           </motion.div>
 
-          {/* Video container */}
+        </div>
+      </div>
+
+      {/* Video Grid */}
+      <div className="px-6 md:px-12">
+        <div className="max-w-[1400px] mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 60 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 1, delay: 0.4 }}
-            className="relative aspect-[9/16] w-full max-w-[380px] md:max-w-[450px] max-h-[680px] md:max-h-[800px] mx-auto overflow-hidden rounded-sm"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
           >
-            <video
-              ref={videoRef}
-              controls
-              poster="/stu.png"
-              className="w-full h-full object-cover"
-              preload="metadata"
-              loading="lazy"
-              onPlay={() => setIsPlaying(true)}
-              onPause={() => setIsPlaying(false)}
-            >
-              <source src="/promo-video.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-
-            {/* Play button overlay */}
-            {!isPlaying && (
-              <button
-                onClick={handlePlayClick}
-                className="absolute inset-0 flex items-center justify-center bg-black/30 hover:bg-black/40 transition-colors duration-300 group"
+            {videos.map((video) => (
+              <div
+                key={video.id}
+                className="group relative w-full"
               >
-                <div className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-[#a65d3f] flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                  <Play className="w-10 h-10 md:w-12 md:h-12 text-[#f8f6f1] fill-[#f8f6f1] ml-1" />
+                <div className="relative h-[300px] md:h-[400px] flex items-center justify-center overflow-hidden bg-black/20">
+                  <video
+                    controls
+                    className="h-full w-full object-contain bg-black"
+                    preload="metadata"
+                  >
+                    <source src={video.src} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
                 </div>
-              </button>
-            )}
+              </div>
+            ))}
           </motion.div>
         </div>
       </div>

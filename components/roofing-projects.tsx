@@ -7,94 +7,38 @@ import { ArrowLeft, ArrowRight, ArrowUpRight } from "lucide-react"
 const projects = [
   {
     id: 1,
-    title: "Aerial View of Red Tile Rooftops",
-    category: "Roofing",
-    year: "2024",
-    image: "/assets/roofing/aerial-shot-rooftops-city-buildings-with-red-shingles.jpg",
+    title: "Exterior Upgrade Project",
+    category: "Exterior",
+    year: "2026",
+    image: "/assets/exterior/WhatsApp Image 2026-01-07 at 1.54.52 PM.jpeg",
   },
   {
     id: 2,
-    title: "Brown Shingled Roof Detail",
-    category: "Roofing",
-    year: "2024",
-    image: "/assets/roofing/brown-shingled-roof-with-brown-shingle-roof.jpg",
+    title: "Exterior Upgrade Project",
+    category: "Exterior",
+    year: "2026",
+    image: "/assets/exterior/WhatsApp Image 2026-01-07 at 1.54.53 PM.jpeg",
   },
   {
     id: 3,
-    title: "Modern Home Exterior",
-    category: "Roofing",
-    year: "2024",
-    image: "/assets/roofing/exterior-home.jpg",
+    title: "Exterior Upgrade Project",
+    category: "Exterior",
+    year: "2026",
+    image: "/assets/exterior/WhatsApp Image 2026-01-07 at 1.55.16 PM (1).jpeg",
   },
   {
     id: 4,
-    title: "Professional Roof Tile Installation",
-    category: "Roofing",
-    year: "2024",
-    image: "/assets/roofing/freepik__8k-photorealistic-cinematic-photography-intimate-c__6846.png",
+    title: "Exterior Upgrade Project",
+    category: "Exterior",
+    year: "2026",
+    image: "/assets/exterior/WhatsApp Image 2026-01-07 at 1.55.16 PM.jpeg",
   },
   {
     id: 5,
-    title: "Residential Roof Detail",
-    category: "Roofing",
-    year: "2024",
-    image: "/assets/roofing/freepik__candid-i-with-natural-textures-and-highly-realisti__6843.png",
-  },
-  {
-    id: 6,
-    title: "Closeup Roof Tile Photography",
-    category: "Roofing",
-    year: "2024",
-    image: "/assets/roofing/freepik__cinematic-closeup-photography-8k-detailed-shot-of-__6847.png",
-  },
-  {
-    id: 7,
-    title: "Aerial Roof Installation View",
-    category: "Roofing",
-    year: "2024",
-    image: "/assets/roofing/freepik__cinematic-drone-photography-8k-photorealistic-aeri__6842.png",
-  },
-  {
-    id: 8,
-    title: "Macro Roof Detail Shot",
-    category: "Roofing",
-    year: "2024",
-    image: "/assets/roofing/freepik__cinematic-macro-photography-8k-closeup-detail-shot__6845.png",
-  },
-  {
-    id: 9,
-    title: "Detailed Roof Closeup",
-    category: "Roofing",
-    year: "2024",
-    image: "/assets/roofing/freepik__cinematic-macro-photography-8k-detailed-closeup-sh__6848.png",
-  },
-  {
-    id: 10,
-    title: "Eye-Level Roof Photography",
-    category: "Roofing",
-    year: "2024",
-    image: "/assets/roofing/freepik__photorealistic-8k-cinematic-photography-eyelevel-f__6844.png",
-  },
-  {
-    id: 11,
-    title: "Contemporary Black Roof Installation",
-    category: "Roofing",
-    year: "2024",
-    image: "/assets/roofing/house-with-black-roof-brown-door-with-window-that-says-welcome-right.jpg",
-  },
-  {
-    id: 12,
-    title: "Low Angle Modern House Roof",
-    category: "Roofing",
-    year: "2024",
-    image: "/assets/roofing/low-angle-modern-house-roof.jpg",
-  },
-  {
-    id: 13,
-    title: "Tile Roof Texture and Pattern",
-    category: "Roofing",
-    year: "2024",
-    image: "/assets/roofing/tile-roof-house-home-textures.jpg",
+    title: "Exterior Upgrade Project",
+    category: "Exterior",
+    year: "2026",
+    image: "/assets/exterior/WhatsApp Image 2026-01-07 at 1.55.23 PM.jpeg",
   },
 ]
 
@@ -139,7 +83,7 @@ export function RoofingProjects() {
               transition={{ duration: 1, delay: 0.2 }}
               className="font-serif text-4xl md:text-6xl lg:text-7xl text-[#1a1a1a] leading-[1.1]"
             >
-              Roofing
+              Exterior Upgrades
               <br />
               <span className="italic text-[#a65d3f]">projects</span>
             </motion.h2>
@@ -160,12 +104,12 @@ export function RoofingProjects() {
             key={project.id}
             className="group relative w-screen sm:w-[60vw] md:w-[45vw] lg:w-[calc((100vw-6rem-4rem)/3)] flex-shrink-0 px-6 sm:px-0 sm:mr-6 md:mr-8"
           >
-            <div className="relative aspect-[3/4] overflow-hidden">
+            <div className={`relative aspect-[3/4] overflow-hidden ${project.id === 5 ? 'bg-[#1a1a1a]' : ''}`}>
               <img
                 src={project.image || "/placeholder.svg"}
                 alt={project.title}
                 loading="lazy"
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                className={`w-full h-full transition-transform duration-700 group-hover:scale-105 ${project.id === 5 ? 'object-contain' : 'object-cover'}`}
               />
               <div className="absolute inset-0 bg-[#1a1a1a]/0 group-hover:bg-[#1a1a1a]/20 transition-colors duration-500" />
 

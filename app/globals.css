@@ -200,6 +200,16 @@ html {
   flex-shrink: 0;
 }
 
+/* Hide scrollbar utility class */
+.scrollbar-hide {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
 /* Custom cursor - hide default cursor on desktop only */
 @media (min-width: 1024px) {
   .custom-cursor,
