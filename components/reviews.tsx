@@ -3,6 +3,7 @@
 import { motion, useInView } from "framer-motion"
 import { useRef, useState, useEffect } from "react"
 import { Star, ArrowLeft, ArrowRight, Quote, User } from "lucide-react"
+import Image from "next/image"
 
 const testimonials = [
   {
@@ -144,11 +145,13 @@ export function Reviews() {
                 transition={{ duration: 0.5 }}
               >
                 <div className="mb-6">
-                  <div className="w-12 h-12 rounded-full overflow-hidden border border-[#f8f6f1]/20">
-                    <img
+                  <div className="relative w-12 h-12 rounded-full overflow-hidden border border-[#f8f6f1]/20">
+                    <Image
                       src={testimonials[activeIndex].image}
                       alt={testimonials[activeIndex].name}
-                      className="w-full h-full object-cover"
+                      fill
+                      className="object-cover"
+                      sizes="48px"
                     />
                   </div>
                 </div>

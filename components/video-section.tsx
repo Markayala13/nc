@@ -2,6 +2,7 @@
 
 import { motion, useInView } from "framer-motion"
 import { useRef } from "react"
+import Image from "next/image"
 const videos = [
   { id: 1, src: "/assets/video/WhatsApp Video 2026-01-07 at 1.53.57 PM.mp4" },
   { id: 3, src: "/assets/video/WhatsApp Video 2026-01-07 at 1.54.07 PM.mp4" },
@@ -21,11 +22,11 @@ export function VideoSection() {
     <section id="video" className="py-24 md:py-40 bg-[#1a1a1a] relative overflow-hidden" ref={ref}>
       {/* Background image - translucent */}
       <div className="absolute inset-0 opacity-10">
-        <img
+        <Image
           src="/stu.png"
           alt=""
-          loading="lazy"
-          className="w-full h-full object-cover"
+          fill
+          className="object-cover"
         />
       </div>
 

@@ -2,6 +2,7 @@
 
 import { motion, useScroll, useTransform } from "framer-motion"
 import { ArrowUpRight, ArrowDown } from "lucide-react"
+import Image from "next/image"
 import { useEffect, useState } from "react"
 
 export function Hero() {
@@ -119,10 +120,12 @@ export function Hero() {
           style={{ y: mounted ? imageY : 0 }}
         >
           <div className="absolute inset-x-6 md:inset-x-12 inset-y-0 overflow-hidden">
-            <img
+            <Image
               src="/assets/hero/hero.jpeg"
               alt="Professional tile and bathroom remodeling"
-              className="w-full h-full object-cover"
+              fill
+              className="object-cover"
+              priority
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#FFF8F0] via-[#FFF8F0]/50 to-transparent" />
           </div>

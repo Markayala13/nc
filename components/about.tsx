@@ -3,6 +3,7 @@
 import { motion, useInView, useMotionValue, useSpring } from "framer-motion"
 import { useRef, useEffect, useState } from "react"
 import { ArrowUpRight } from "lucide-react"
+import Image from "next/image"
 
 function AnimatedNumber({ value, suffix, isInView }: { value: number; suffix: string; isInView: boolean }) {
   const [displayValue, setDisplayValue] = useState(0)
@@ -126,11 +127,12 @@ export function About() {
             transition={{ duration: 1.2, delay: 0.6 }}
             className="mt-24 md:mt-32 relative h-[30vh] md:h-[40vh] overflow-hidden rounded-sm"
           >
-            <img
+            <Image
               src="/assets/hero/beautiful_kitchen (1).jpeg"
               alt="Professional remodeling craftsmanship"
-              loading="lazy"
-              className="w-full h-full object-cover"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 1400px"
             />
             <div className="absolute bottom-0 left-0 right-0 p-8 md:p-12 bg-gradient-to-t from-[#1a1a1a] to-transparent">
               <div className="flex items-end justify-between">

@@ -3,6 +3,7 @@
 import { motion, useInView } from "framer-motion"
 import { useRef, useState } from "react"
 import { ArrowUpRight, Plus, Star } from "lucide-react"
+import Image from "next/image"
 
 const services = [
   {
@@ -192,11 +193,12 @@ export function Services() {
                           className="w-full h-full object-cover"
                         />
                       ) : (
-                        <img
+                        <Image
                           src={service.image || "/placeholder.svg"}
                           alt={service.title}
-                          loading="lazy"
-                          className="w-full h-full object-cover"
+                          fill
+                          className="object-cover"
+                          sizes="(max-width: 768px) 100vw, 600px"
                         />
                       )}
                     </div>
