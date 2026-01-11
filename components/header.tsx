@@ -94,16 +94,18 @@ export function Header() {
                 href="https://www.facebook.com/profile.php?id=61582726610574"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#4A5568] hover:text-[#D67D3E] transition-colors duration-300 text-sm"
+                className="flex items-center gap-2 text-[#4A5568] hover:text-[#D67D3E] transition-colors duration-300 text-sm"
               >
+                <Facebook className="w-5 h-5" />
                 Follow us on Facebook
               </a>
               <a
                 href="https://share.google/2z9DaSTKEWF0oiuhK"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#4A5568] hover:text-[#D67D3E] transition-colors duration-300 text-sm"
+                className="flex items-center gap-2 text-[#4A5568] hover:text-[#D67D3E] transition-colors duration-300 text-sm"
               >
+                <GoogleIcon className="w-5 h-5" />
                 Review us on Google
               </a>
             </div>
@@ -168,16 +170,18 @@ export function Header() {
                   href="https://www.facebook.com/profile.php?id=61582726610574"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white hover:text-[#4A5568] transition-colors text-lg"
+                  className="flex items-center gap-2 text-white hover:text-[#4A5568] transition-colors text-lg"
                 >
+                  <Facebook className="w-6 h-6" />
                   Follow us on Facebook
                 </a>
                 <a
                   href="https://share.google/2z9DaSTKEWF0oiuhK"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white hover:text-[#4A5568] transition-colors text-lg"
+                  className="flex items-center gap-2 text-white hover:text-[#4A5568] transition-colors text-lg"
                 >
+                  <GoogleIcon className="w-6 h-6" />
                   Review us on Google
                 </a>
               </motion.div>
