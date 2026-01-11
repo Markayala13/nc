@@ -4,14 +4,11 @@ import { motion, useInView } from "framer-motion"
 import { useRef } from "react"
 import Image from "next/image"
 const videos = [
-  { id: 1, src: "/assets/video/WhatsApp Video 2026-01-07 at 1.53.57 PM.mp4" },
-  { id: 3, src: "/assets/video/WhatsApp Video 2026-01-07 at 1.54.07 PM.mp4" },
-  { id: 4, src: "/assets/video/WhatsApp Video 2026-01-07 at 1.54.10 PM.mp4" },
-  { id: 5, src: "/assets/video/WhatsApp Video 2026-01-07 at 1.54.13 PM.mp4" },
-  { id: 6, src: "/assets/video/WhatsApp Video 2026-01-07 at 1.54.23 PM.mp4" },
-  { id: 7, src: "/assets/video/WhatsApp Video 2026-01-07 at 1.54.47 PM.mp4" },
-  { id: 8, src: "/assets/video/WhatsApp Video 2026-01-07 at 1.55.04 PM.mp4" },
-  { id: 9, src: "/assets/video/WhatsApp Video 2026-01-07 at 1.55.21 PM.mp4" },
+  { id: 1, src: "/assets/video/WhatsApp Video 2026-01-07 at 1.54.47 PM.mp4" },
+  { id: 2, src: "/assets/video/WhatsApp Video 2026-01-07 at 1.55.04 PM.mp4" },
+  { id: 3, src: "/assets/video/WhatsApp Video 2026-01-07 at 1.55.21 PM.mp4" },
+  { id: 4, src: "/assets/video/WhatsApp Video 2026-01-10 at 7.54.58 PM.mp4" },
+  { id: 5, src: "/assets/video/WhatsApp Video 2026-01-10 at 8.04.59 PM.mp4" },
 ]
 
 export function VideoSection() {

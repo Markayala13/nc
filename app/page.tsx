@@ -17,9 +17,6 @@ const ConcreteProjects = dynamic(() => import("@/components/concrete-projects").
 const LandscapingProjects = dynamic(() => import("@/components/landscaping-projects").then((mod) => ({ default: mod.LandscapingProjects })), {
   loading: () => <div className="h-screen bg-[#f8f6f1]" />,
 })
-const RoofingProjects = dynamic(() => import("@/components/roofing-projects").then((mod) => ({ default: mod.RoofingProjects })), {
-  loading: () => <div className="h-screen bg-[#f8f6f1]" />,
-})
 const VideoSection = dynamic(() => import("@/components/video-section").then((mod) => ({ default: mod.VideoSection })), {
   loading: () => <div className="h-screen bg-[#1a1a1a]" />,
 })
@@ -46,7 +43,6 @@ export default function HomePage() {
       <ConcreteProjects />
       <Projects />
       <LandscapingProjects />
-      <RoofingProjects />
       <VideoSection />
       <Reviews />
       <Contact />
