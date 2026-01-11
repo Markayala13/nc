@@ -89,22 +89,22 @@ export function Header() {
             transition={{ duration: 1, delay: 0.9 }}
             className="flex items-center gap-6"
           >
-            <div className="hidden md:flex items-center gap-4 mr-2">
+            <div className="hidden md:flex items-center gap-6 mr-2">
               <a
                 href="https://www.facebook.com/profile.php?id=61582726610574"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#4A5568] hover:text-[#D67D3E] transition-colors duration-300"
+                className="text-[#4A5568] hover:text-[#D67D3E] transition-colors duration-300 text-sm"
               >
-                <Facebook className="w-5 h-5" />
+                Follow us on Facebook
               </a>
               <a
                 href="https://share.google/2z9DaSTKEWF0oiuhK"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#4A5568] hover:text-[#D67D3E] transition-colors duration-300"
+                className="text-[#4A5568] hover:text-[#D67D3E] transition-colors duration-300 text-sm"
               >
-                <GoogleIcon className="w-5 h-5" />
+                Review us on Google
               </a>
             </div>
             <button
@@ -162,23 +162,23 @@ export function Header() {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -20 }}
                 transition={{ duration: 0.5, delay: 0.35 }}
-                className="flex gap-6 mt-4"
+                className="flex flex-col items-center gap-4 mt-4"
               >
                 <a
                   href="https://www.facebook.com/profile.php?id=61582726610574"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white hover:text-[#4A5568] transition-colors"
+                  className="text-white hover:text-[#4A5568] transition-colors text-lg"
                 >
-                  <Facebook className="w-6 h-6" />
+                  Follow us on Facebook
                 </a>
                 <a
                   href="https://share.google/2z9DaSTKEWF0oiuhK"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white hover:text-[#4A5568] transition-colors"
+                  className="text-white hover:text-[#4A5568] transition-colors text-lg"
                 >
-                  <GoogleIcon className="w-6 h-6" />
+                  Review us on Google
                 </a>
               </motion.div>
               <motion.button
