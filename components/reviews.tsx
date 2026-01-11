@@ -36,6 +36,106 @@ const testimonials = [
     project: "Kitchen Remodeling",
     image: "/assets/testimonial/jennifer.png",
   },
+  {
+    id: 4,
+    name: "Jackeline Franco",
+    title: "",
+    quote:
+      "Excellent job on my bathroom remodel. Jose was punctual from day one and always kept clear communication. The quality of the work was outstanding and exactly what I wanted. I definitely recommend him for his professionalism and dedication",
+    rating: 5,
+    project: "",
+    image: "",
+  },
+  {
+    id: 5,
+    name: "Steph Hernandez",
+    title: "",
+    quote:
+      "Mr. Padilla and his team did an excellent job installing vinyl siding on our home in Richardson. The work was clean, straight, and properly secured. They paid close attention to detail and made sure everything was well sealed. The house looks updated and professionally finished. Highly recommended.",
+    rating: 5,
+    project: "",
+    image: "",
+  },
+  {
+    id: 6,
+    name: "Omaira Figueroa",
+    title: "",
+    quote:
+      "Padilla’s Prestige Remodeling did an excellent job on our siding project in DeSoto. The installation was clean, solid, and very well sealed. They paid close attention to detail and made sure everything was properly protected from the elements. The finished work looks professional and durable. Highly recommended.",
+    rating: 5,
+    project: "",
+    image: "",
+  },
+  {
+    id: 7,
+    name: "Gabriel Cruz",
+    title: "",
+    quote:
+      "Great experience with Padilla’s Prestige Remodeling. They were easy to work with, kept good communication, and did a solid job. Everything turned out the way we expected. Would definitely recommend",
+    rating: 5,
+    project: "",
+    image: "",
+  },
+  {
+    id: 8,
+    name: "Samira Cole",
+    title: "",
+    quote:
+      "Juan and Jose completed a siding repair along with a small room renovation, and everything turned out beautifully. From installing a new door to fixing the flooring, their attention to detail was evident. Reliable, skilled, and very easy to work with.",
+    rating: 5,
+    project: "",
+    image: "",
+  },
+  {
+    id: 9,
+    name: "Joshua Williams",
+    title: "",
+    quote:
+      "I brought in Padilla with Julio and Juan for a complete bathroom remodel, and they knocked it out perfectly. Everything—from the tile to the cabinets—looks custom and high-end. Their teamwork is smooth, and their workmanship shows in the details.",
+    rating: 5,
+    project: "",
+    image: "",
+  },
+  {
+    id: 10,
+    name: "Abel Oliver",
+    title: "",
+    quote:
+      "Choosing Jose and his team for my remodel was the best decision I made. They managed tile flooring, siding upgrades, and installed two new doors seamlessly. The entire space now looks fresh, modern, and professionally finished.",
+    rating: 5,
+    project: "",
+    image: "",
+  },
+  {
+    id: 11,
+    name: "Erlinda Franco",
+    title: "",
+    quote:
+      "I hired Padilla’s Prestige Remodeling for siding work, and the results were excellent. The installation looks clean and professional, and the team was punctual and easy to work with. Highly recommended for any siding project.",
+    rating: 5,
+    project: "",
+    image: "",
+  },
+  {
+    id: 12,
+    name: "Miles Sellers",
+    title: "",
+    quote:
+      "I hired Jose and Julio for a small flooring project, and they ended up transforming the whole room. The new tile looks clean, the door they added fits perfectly, and the way they finished the edges shows real craftsmanship.",
+    rating: 5,
+    project: "",
+    image: "",
+  },
+  {
+    id: 13,
+    name: "Louis Baldwin",
+    title: "",
+    quote:
+      "I hired Mr. Padilla’s team for a full siding replacement, and the difference is unbelievable. They fixed damaged panels, tightened up the corners, and refreshed the entryway with a new door install. Their attention to detail really stands out.",
+    rating: 5,
+    project: "",
+    image: "",
+  },
 ]
 
 export function Reviews() {
@@ -144,17 +244,19 @@ export function Reviews() {
                 exit={{ opacity: 0, x: -20 }}
                 transition={{ duration: 0.5 }}
               >
-                <div className="mb-6">
-                  <div className="relative w-12 h-12 rounded-full overflow-hidden border border-[#f8f6f1]/20">
-                    <Image
-                      src={testimonials[activeIndex].image}
-                      alt={testimonials[activeIndex].name}
-                      fill
-                      className="object-cover"
-                      sizes="48px"
-                    />
+                {testimonials[activeIndex].image && (
+                  <div className="mb-6">
+                    <div className="relative w-12 h-12 rounded-full overflow-hidden border border-[#f8f6f1]/20">
+                      <Image
+                        src={testimonials[activeIndex].image}
+                        alt={testimonials[activeIndex].name}
+                        fill
+                        className="object-cover"
+                        sizes="48px"
+                      />
+                    </div>
                   </div>
-                </div>
+                )}
                 <blockquote className="font-serif text-2xl md:text-3xl lg:text-4xl text-[#f8f6f1] leading-[1.4] mb-10">
                   "{testimonials[activeIndex].quote}"
                 </blockquote>

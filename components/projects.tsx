@@ -11,70 +11,70 @@ const projects = [
     title: "Professional Siding Installation",
     category: "Siding",
     year: "2026",
-    image: "/assets/siding/picture_siding_project.jpeg",
+    image: "/assets/siding/1.jpeg",
   },
   {
     id: 2,
     title: "Professional Siding Installation",
     category: "Siding",
     year: "2026",
-    image: "/assets/siding/WhatsApp Image 2026-01-09 at 7.58.49 PM (1).jpeg",
+    image: "/assets/siding/3.jpeg",
   },
   {
     id: 3,
     title: "Professional Siding Installation",
     category: "Siding",
     year: "2026",
-    image: "/assets/siding/WhatsApp Image 2026-01-09 at 7.58.49 PM (2).jpeg",
+    image: "/assets/siding/picture_siding_project.jpeg",
   },
   {
     id: 4,
     title: "Professional Siding Installation",
     category: "Siding",
     year: "2026",
-    image: "/assets/siding/WhatsApp Image 2026-01-09 at 7.58.49 PM.jpeg",
+    image: "/assets/siding/WhatsApp Image 2026-01-09 at 7.58.49 PM (1).jpeg",
   },
   {
     id: 5,
     title: "Professional Siding Installation",
     category: "Siding",
     year: "2026",
-    image: "/assets/siding/WhatsApp Image 2026-01-09 at 7.58.57 PM.jpeg",
+    image: "/assets/siding/WhatsApp Image 2026-01-09 at 7.58.49 PM (2).jpeg",
   },
   {
     id: 6,
     title: "Professional Siding Installation",
     category: "Siding",
     year: "2026",
-    image: "/assets/siding/WhatsApp Image 2026-01-09 at 7.59.11 PM.jpeg",
+    image: "/assets/siding/WhatsApp Image 2026-01-09 at 7.58.49 PM.jpeg",
   },
   {
     id: 7,
     title: "Professional Siding Installation",
     category: "Siding",
     year: "2026",
-    image: "/assets/siding/WhatsApp Image 2026-01-09 at 7.59.12 PM.jpeg",
+    image: "/assets/siding/WhatsApp Image 2026-01-09 at 7.58.57 PM.jpeg",
   },
   {
     id: 8,
     title: "Professional Siding Installation",
     category: "Siding",
     year: "2026",
-    image: "/assets/siding/WhatsApp Image 2026-01-09 at 7.59.13 PM (1).jpeg",
+    image: "/assets/siding/WhatsApp Image 2026-01-09 at 7.59.11 PM.jpeg",
   },
   {
     id: 9,
     title: "Professional Siding Installation",
     category: "Siding",
     year: "2026",
-    image: "/assets/siding/WhatsApp Image 2026-01-09 at 7.59.13 PM.jpeg",
+    image: "/assets/siding/WhatsApp Image 2026-01-09 at 7.59.12 PM.jpeg",
   },
   {
     id: 10,
     title: "Professional Siding Installation",
     category: "Siding",
     year: "2026",
-    image: "/assets/siding/WhatsApp Image 2026-01-09 at 7.59.14 PM.jpeg",
+    image: "/assets/siding/WhatsApp Image 2026-01-09 at 7.59.13 PM (1).jpeg",
   },
   {
     id: 11,
@@ -116,31 +116,24 @@ const projects = [
     title: "Professional Siding Installation",
     category: "Siding",
     year: "2026",
-    image: "/assets/siding/WhatsApp Image 2026-01-09 at 7.59.20 PM.jpeg",
+    image: "/assets/siding/WhatsApp Image 2026-01-09 at 7.59.21 PM.jpeg",
   },
   {
     id: 17,
     title: "Professional Siding Installation",
     category: "Siding",
     year: "2026",
-    image: "/assets/siding/WhatsApp Image 2026-01-09 at 7.59.21 PM.jpeg",
+    image: "/assets/siding/WhatsApp Image 2026-01-09 at 7.59.22 PM.jpeg",
   },
   {
     id: 18,
     title: "Professional Siding Installation",
     category: "Siding",
     year: "2026",
-    image: "/assets/siding/WhatsApp Image 2026-01-09 at 7.59.22 PM.jpeg",
-  },
-  {
-    id: 19,
-    title: "Professional Siding Installation",
-    category: "Siding",
-    year: "2026",
     image: "/assets/siding/WhatsApp Image 2026-01-09 at 7.59.23 PM (1).jpeg",
   },
   {
-    id: 20,
+    id: 19,
     title: "Professional Siding Installation",
     category: "Siding",
     year: "2026",
@@ -190,9 +183,17 @@ export function Projects() {
               className="font-serif text-4xl md:text-6xl lg:text-7xl text-[#1a1a1a] leading-[1.1]"
             >
               Siding Installation
-              <br />
-              <span className="italic text-[#a65d3f]">projects</span>
             </motion.h2>
+            <motion.p
+              initial={{ opacity: 0, y: 40 }}
+              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 1, delay: 0.4 }}
+              className="text-[#707070] max-w-xl text-sm md:text-base leading-relaxed"
+            >
+              At Padilla’s Prestige Remodeling, we also offer exterior remodeling services, including siding installation,
+              focused on professional workmanship, effective moisture protection, and durable finishes that protect and
+              enhance your property long term.
+            </motion.p>
           </div>
         </div>
       </div>

@@ -13,6 +13,48 @@ const projects = [
     year: "2026",
     image: "/assets/floor.png",
   },
+  {
+    id: 2,
+    title: "Professional Flooring Installation",
+    category: "Flooring",
+    year: "2026",
+    image: "/assets/floor/WhatsApp Image 2026-01-10 at 3.23.31 PM (1).jpeg",
+  },
+  {
+    id: 3,
+    title: "Professional Flooring Installation",
+    category: "Flooring",
+    year: "2026",
+    image: "/assets/floor/WhatsApp Image 2026-01-10 at 3.23.31 PM (3).jpeg",
+  },
+  {
+    id: 4,
+    title: "Professional Flooring Installation",
+    category: "Flooring",
+    year: "2026",
+    image: "/assets/floor/WhatsApp Image 2026-01-10 at 3.23.31 PM (4).jpeg",
+  },
+  {
+    id: 5,
+    title: "Professional Flooring Installation",
+    category: "Flooring",
+    year: "2026",
+    image: "/assets/floor/WhatsApp Image 2026-01-10 at 3.23.31 PM (5).jpeg",
+  },
+  {
+    id: 6,
+    title: "Professional Flooring Installation",
+    category: "Flooring",
+    year: "2026",
+    image: "/assets/floor/WhatsApp Image 2026-01-10 at 3.23.31 PM (6).jpeg",
+  },
+  {
+    id: 7,
+    title: "Professional Flooring Installation",
+    category: "Flooring",
+    year: "2026",
+    image: "/assets/floor/WhatsApp Image 2026-01-10 at 3.23.31 PM.jpeg",
+  },
 ]
 
 export function LandscapingProjects() {

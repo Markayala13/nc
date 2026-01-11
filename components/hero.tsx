@@ -83,7 +83,7 @@ export function Hero() {
               transition={{ duration: 1, delay: 0.9 }}
               className="text-center mt-8 md:mt-12 text-[15px] md:text-lg text-[#707070] max-w-xl mx-auto leading-relaxed tracking-wide"
             >
-              Professional tile installation, bathroom renovation, and siding services for Dallas TX homeowners who demand quality craftsmanship.
+              Professional tile installation, bathroom, kitchen, and flooring remodeling services for Dallas–Fort Worth homeowners who value quality craftsmanship, proper waterproofing, and long-lasting results.
             </motion.p>
 
             {/* CTAs - Updated button text */}

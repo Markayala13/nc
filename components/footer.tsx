@@ -43,7 +43,7 @@ export function Footer() {
             <div className="lg:col-span-2">
               <div className="mb-6">
                 <Image
-                  src="/logobg.png"
+                  src="/assets/logo/logo.png"
                   alt="Padilla's Prestige Remodeling"
                   width={612}
                   height={408}
@@ -108,6 +108,16 @@ export function Footer() {
                     className="text-[#c4bdb2] hover:text-[#a65d3f] transition-colors duration-300 text-sm"
                   >
                     Follow us on Facebook
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://share.google/2z9DaSTKEWF0oiuhK"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#c4bdb2] hover:text-[#a65d3f] transition-colors duration-300 text-sm"
+                  >
+                    Review us on Google
                   </a>
                 </li>
                 <li className="pt-2 text-[#6b6560]">

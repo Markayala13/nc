@@ -2,8 +2,21 @@
 
 import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import { ArrowUpRight } from "lucide-react"
+import { ArrowUpRight, Facebook } from "lucide-react"
 import Image from "next/image"
+
+const GoogleIcon = ({ className }: { className?: string }) => (
+  <svg
+    role="img"
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    className={className}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <title>Google</title>
+    <path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z" />
+  </svg>
+)
 
 export function Header() {
   const [scrolled, setScrolled] = useState(false)
@@ -76,6 +89,24 @@ export function Header() {
             transition={{ duration: 1, delay: 0.9 }}
             className="flex items-center gap-6"
           >
+            <div className="hidden md:flex items-center gap-4 mr-2">
+              <a
+                href="https://www.facebook.com/profile.php?id=61582726610574"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#4A5568] hover:text-[#D67D3E] transition-colors duration-300"
+              >
+                <Facebook className="w-5 h-5" />
+              </a>
+              <a
+                href="https://share.google/2z9DaSTKEWF0oiuhK"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#4A5568] hover:text-[#D67D3E] transition-colors duration-300"
+              >
+                <GoogleIcon className="w-5 h-5" />
+              </a>
+            </div>
             <button
               onClick={() => scrollToSection("contact")}
               className="hidden md:flex items-center gap-2 text-[13px] tracking-[0.15em] uppercase text-white bg-[#D67D3E] px-6 py-3 hover:bg-[#4A5568] transition-colors duration-500"
@@ -126,6 +157,30 @@ export function Header() {
                   {item}
                 </motion.button>
               ))}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{ duration: 0.5, delay: 0.35 }}
+                className="flex gap-6 mt-4"
+              >
+                <a
+                  href="https://www.facebook.com/profile.php?id=61582726610574"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white hover:text-[#4A5568] transition-colors"
+                >
+                  <Facebook className="w-6 h-6" />
+                </a>
+                <a
+                  href="https://share.google/2z9DaSTKEWF0oiuhK"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white hover:text-[#4A5568] transition-colors"
+                >
+                  <GoogleIcon className="w-6 h-6" />
+                </a>
+              </motion.div>
               <motion.button
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
